@@ -5,6 +5,10 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  height: 100%;
+  /*background: #333 url("../../../../images/wood-bg.jpg") no-repeat center;
+  background-size: cover;*/
+  background-color: #586f81;
 }
 
 
