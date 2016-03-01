@@ -1,0 +1,56 @@
+{
+    "name": "bear-essentials-massage",
+    "description": "Bear Essentials Massage Website",
+    "version": "0.0.0",
+    "homepage": "https://github.com/jdheywood",
+    "author": {
+        "name": "James Heywood",
+        "email": "jdheywood@gmail.com",
+        "url": "http://www.jdheywood.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jdheywood/bear-essentials-massage.git"
+
+    },
+    "bugs": {
+        "url": ""
+    },
+    "license": {
+        "type": "",
+        "url": ""
+    },
+    "private": true,
+    "scripts": {
+        "start": "grunt"
+    },
+    "dependencies": {
+        "express": "~3.2.6",
+        "grunt": "~0.4.1",
+        "jade": "~0.34.1",
+        "googleapis": "~0.4.3",
+        "matchdep": "~0.1.2"
+    },
+    "_commentdependencies": {
+        "jade": "~1.0.2",
+        "mongoose": "~3.6.16",
+        "request": "~2.26.0",
+        "async": "~0.2.9"
+    },
+    "keywords": [
+        "nodejs",
+        "Express",
+        "Jade",
+        "Bootstrap 3.2.0"
+    ],
+    "devDependencies": {
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-connect": "~0.3.0",
+        "grunt-contrib-copy": "~0.4.1",
+        "grunt-contrib-jshint": "~0.6.2",
+        "grunt-contrib-watch": "~0.5.1",
+        "grunt-open": "~0.2.2",
+        "grunt-nodemon": "~0.1.0",
+        "grunt-markdown": "~0.4.0"
+    }
+}
