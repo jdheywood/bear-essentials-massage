@@ -1,0 +1,37 @@
+// Carousel
+// ==================================================
+#myCarousel.carousel.slide(data-ride='carousel')
+  // Indicators
+  ol.carousel-indicators
+    for item in carouselItems
+      if item.id == 0
+        li.active(data-target='#myCarousel', data-slide-to='#{item.id}')
+      else
+        li(data-target='#myCarousel', data-slide-to='#{item.id}')
+  .carousel-inner
+    for item in carouselItems
+      if item.id == 0
+        .item.active
+          img(src='#{item.src}', alt='#{item.alt}')
+          .container
+            .carousel-caption
+              h1 #{item.heading}
+              p
+                | #{item.text}
+              p
+                a.btn.btn-lg.btn-primary(href=#{item.linkUrl}, role='button') #{item.linkText}
+      else
+        .item
+          img(src='#{item.src}', alt='#{item.alt}')
+          .container
+            .carousel-caption
+              h1 #{item.heading}
+              p
+                | #{item.text}
+              p
+                a.btn.btn-lg.btn-primary(href=#{item.linkUrl}, role='button') #{item.linkText}
+  a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+    span.glyphicon.glyphicon-chevron-left
+  a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+    span.glyphicon.glyphicon-chevron-right
+// /.carousel
