@@ -1,0 +1,23 @@
+ul.nav.masthead-nav
+  li.dropdown.active
+    a.dropdown-toggle(href='#', data-toggle='dropdown')
+      | Therapies 
+      span.caret
+    ul.dropdown-menu(role='menu')
+      li
+        a(href='/therapies/sports-massage') Sports Massage
+      li
+        a(href='/therapies/sports-taping') Sports Taping
+      li
+        a(href='/therapies/hot-stones-massage') Hot Stone Massage
+      li
+        a(href='/therapies/pregnancy-massage') Pregnancy Massage 
+      li
+        a(href='/therapies/seated-acupressure') Seated Acupressure
+  li
+    a(href='/price-list') Prices
+  li
+    a(href='/contact') Contact
+  unless pageName == 'home'
+    li
+      a(href='/') Home

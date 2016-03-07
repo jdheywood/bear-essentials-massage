@@ -31,6 +31,7 @@ app.use(express.session({
 
 //routes
 require('./routes/index')(app);
+require('./routes/therapies')(app);
 
 app.use(app.router);
 app.use(express.static(path.join(__dirname, appConfig.directories.publicDir)));

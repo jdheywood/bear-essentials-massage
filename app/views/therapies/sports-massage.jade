@@ -1,0 +1,52 @@
+doctype html
+html(lang='en')
+  head
+    include ../partials/head.jade
+
+    // Custom styles for this template
+    link(href='/css/carousel.css', rel='stylesheet')
+  body
+    include ../partials/navigation-carousel.jade
+
+    include ../partials/carousel.jade
+    
+    // Marketing messaging and featurettes
+    // ==================================================
+    // Wrap the rest of the page in another container to center all the content.
+    .container.marketing
+      
+      // START THE FEATURETTES
+      .row.featurette
+        .col-md-12
+          h2.featurette-heading
+            | #{heading}.
+            span.text-muted #{subtitle}
+          p.lead
+            | Sports massage is a physical treatment primarily used on the neuromusculoskeletal system, it can help maintain your body’s condition, prevent injuries and loss of mobility, cure and restore injured soft tissues of the body including the muscle, tendons, ligaments and fascia. Although primarily developed for athletes to support their performance anyone can receive a sports massage. 
+          p
+            | Each session can be tailored to meet your particular needs and focus on specific problems areas and the surrounding tissue. This can include shoulders, legs, lower and upper back. 
+          p
+            | The benefits of sports massage include the following:
+            ul
+              li Pain reduction 
+              li Reduce risk of injury
+              li Speed up injury recovery
+              li Improves blood circulation
+              li Relaxation
+              li Anxiety reduction
+              li Increase in your sense of general wellbeing
+          p 
+            | Combining hot stones and sports massage can help to not only aid recovery from injury but also relieve chronic pain, reduce stress and promote deep relaxation. Some treatments may include an assessment of posture and range of movement.
+
+      hr.featurette-divider
+      // /END THE FEATURETTES
+      // FOOTER
+      include ../partials/footer-carousel.jade
+    // /.container
+    
+    // Bootstrap core JavaScript
+    // ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/holder.js')

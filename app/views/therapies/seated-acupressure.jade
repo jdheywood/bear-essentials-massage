@@ -1,0 +1,50 @@
+doctype html
+html(lang='en')
+  head
+    include ../partials/head.jade
+
+    // Custom styles for this template
+    link(href='/css/carousel.css', rel='stylesheet')
+  body
+    include ../partials/navigation-carousel.jade
+
+    include ../partials/carousel.jade
+    
+    // Marketing messaging and featurettes
+    // ==================================================
+    // Wrap the rest of the page in another container to center all the content.
+    .container.marketing
+      
+      // START THE FEATURETTES
+      .row.featurette
+        .col-md-12
+          h2.featurette-heading
+            | #{heading}. 
+            span.text-muted #{subtitle}
+          p.lead
+            | Also known as on-site massage seated acupressure originates from the traditional Japanese acupressure technique known as ‘Anma’ which means ‘press and rub’. 
+          p
+            | Seated acupressure massage stimulates the acupressure points in the head, neck, shoulders, spine and lower back. During the treatment the client will remain fully clothed and seated facing forward in an ergonomically designed massage chair. The therapist will apply pressure to the acupressure points and follow sequence of movements which is called ‘kata’ which means ‘form’ signifying a detailed choreographed pattern of movement.
+          p
+            | The benefits for seated acupressure massage include the following: 
+            ul
+              li Improves the flow of energy around the body
+              li Balance and strengthens the body’s muscular, circulatory and nervous systems
+              li Relaxes, refreshes and energises the mind and body
+              li Reduces stress and tension
+              li Relieves anxiety
+          p
+            | One treatment usually last around 15 minutes.
+
+      hr.featurette-divider
+      // /END THE FEATURETTES
+      // FOOTER
+      include ../partials/footer-carousel.jade
+    // /.container
+    
+    // Bootstrap core JavaScript
+    // ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/holder.js')

@@ -6,49 +6,25 @@ html(lang='en')
     // Custom styles for this template
     link(href='/css/cover.css', rel='stylesheet')
     
-  body
+  body(class='#{imageClass}')
     .site-wrapper
       .site-wrapper-inner
         .cover-container
           .masthead.clearfix
             .inner
-              h1.masthead-brand Bear Essentials Massage
-              ul.nav.masthead-nav
-                li.dropdown.active
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Therapies 
-                    span.caret
-                  ul.dropdown-menu(role='menu')
-                    li
-                      a(href='#') Sports Massage
-                    li
-                      a(href='#') Sports Taping
-                    li
-                      a(href='#') Hot Stone Massage
-                    li
-                      a(href='#') Pregnancy Massage 
-                    li
-                      a(href='#') Seated Acupressure
-                li
-                  a(href='/contact') Contact
+              h1.masthead-brand #{heading}
+              include partials/navigation-cover.jade
           .inner.cover
-            h2.cover-heading Here to help you recover, relax and rejuvenate.
+            h2.cover-heading #{subtitle}
             p.lead
-              | Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.
+              | #{bodyText}
             p.lead
               a.btn.btn-lg.btn-default(href='#') Learn more
-          .mastfoot
-            .inner
-              p
-                | Produced by  
-                a(href='http://www.jdheywood.com') jdheywood
-                | , follow me on
-                a(href='https://twitter.com/jdheywood') twitter
-                | .
+          include partials/footer-cover.jade
     
     // Bootstrap core JavaScript
     // ==================================================
     // Placed at the end of the document so the pages load faster
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-    script(src='#{pathToAssets}/dist/js/bootstrap.min.js')
-    script(src='#{pathToAssets}/docs/assets/js/_vendor/holder.js')
+    script(src='/js/jquery-1.12.1.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/holder.js')

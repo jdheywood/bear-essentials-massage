@@ -1,0 +1,52 @@
+doctype html
+html(lang='en')
+  head
+    include ../partials/head.jade
+
+    // Custom styles for this template
+    link(href='/css/carousel.css', rel='stylesheet')
+  body
+    include ../partials/navigation-carousel.jade
+
+    include ../partials/carousel.jade
+    
+    // Marketing messaging and featurettes
+    // ==================================================
+    // Wrap the rest of the page in another container to center all the content.
+    .container.marketing
+      
+      // START THE FEATURETTES
+      .row.featurette
+        .col-md-12
+          h2.featurette-heading
+            | #{heading}. 
+            span.text-muted #{subtitle}
+          p.lead
+            | Pregnancy is a joyous time for the expectant mother however there are so many changes happening to the body which unfortunately can often cause some pain and discomfort. The dramatic changes to the body this can often put stress on the back, neck and abdominal muscle.
+          p
+            | Pregnancy massage can offer deep relaxation along with emotional and physiological wellbeing for both the mother and her baby. Regular massage can also help to reduce the aches, pains and stresses from the pregnancy. 
+          p
+            | During the massage the mother will be positioned on her side whilst supported by pillows to ensure comfort and safety for the mother and baby.
+          p
+            | The benefits of pregnancy massage include the following:
+            ul
+              li Reduce back pain and general aches from the pregnancy
+              li Promote better sleep
+              li Reduce stress and blood pressure
+              li Reduce fluid retention
+              li Improve blood circulation (providing more oxygen and nutrients to the baby)
+              li Relax the body and mind
+              li Rejuvenate and uplift
+      
+      hr.featurette-divider
+      // /END THE FEATURETTES
+      // FOOTER
+      include ../partials/footer-carousel.jade
+    // /.container
+    
+    // Bootstrap core JavaScript
+    // ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/holder.js')
