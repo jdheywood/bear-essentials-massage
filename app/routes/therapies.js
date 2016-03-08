@@ -3,7 +3,7 @@
 
 module.exports = function (app) {
 
-    var sports_massage = { 
+    var sportsMassage = {
         items: [
             { 'id': 0, 'src': '/img/sports-2.jpg', 'alt': 'sports 2', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '#', 'linkText': 'Call to action' },
             { 'id': 1, 'src': '/img/sports-4.jpg', 'alt': 'sports 4', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '#', 'linkText': 'Do something' },
@@ -12,10 +12,10 @@ module.exports = function (app) {
         title: 'Bear Essentials Massage - Sports Massage',
         'heading': 'Sports Massage',
         'subtitle': 'To aid recovery from injury',
-        pageName: 'sports_massage'
+        pageName: 'sportsMassage'
     };
 
-    var sports_taping = {
+    var sportsTaping = {
         items: [
             { 'id': 0, 'src': '/img/taping-1.jpg', 'alt': 'taping 1', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '#', 'linkText': 'Call to action' },
             { 'id': 1, 'src': '/img/taping-2.jpg', 'alt': 'taping 2', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '#', 'linkText': 'Do something' }
@@ -23,10 +23,10 @@ module.exports = function (app) {
         title: 'Bear Essentials Massage - Sports Taping',
         'heading': 'Sports Taping',
         'subtitle': 'For support during recovery',
-        pageName: 'sports_taping'
+        pageName: 'sportsTaping'
     };
 
-    var hot_stones_massage = {
+    var hotStonesMassage = {
         items: [
             { 'id': 0, 'src': '/img/stones-3.jpg', 'alt': 'stones 3', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '#', 'linkText': 'Call to action' },
             { 'id': 1, 'src': '/img/stones-1.jpg', 'alt': 'stones 1', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '#', 'linkText': 'Do something' },
@@ -35,10 +35,10 @@ module.exports = function (app) {
         title: 'Bear Essentials Massage - Hot Stones Massage',
         'heading': 'Hot Stones Massage',
         'subtitle': 'Healing and effective',
-        pageName: 'hot_stones_massage'
+        pageName: 'hotStonesMassage'
     };
 
-    var pregnancy_massage = {
+    var pregnancyMassage = {
         items: [
             { 'id': 0, 'src': '/img/pregnancy-4.jpg', 'alt': 'pregnancy 4', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '#', 'linkText': 'Call to action' },
             { 'id': 1, 'src': '/img/pregnancy-1.jpg', 'alt': 'pregnancy 1', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '#', 'linkText': 'Do something' },
@@ -47,10 +47,10 @@ module.exports = function (app) {
         title: 'Bear Essentials Massage - Pregnancy Massage',
         'heading': 'Pregnancy Massage',
         'subtitle': 'Deep relaxation and wellbeing',
-        pageName: 'pregnancy_massage'
+        pageName: 'pregnancyMassage'
     };
 
-    var seated_acupressure = {
+    var seatedAcupressure = {
         items: [
             { 'id': 0, 'src': '/img/seated-1.jpg', 'alt': 'seated 1', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '#', 'linkText': 'Call to action' },
             { 'id': 1, 'src': '/img/seated-6.jpg', 'alt': 'seated 6', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '#', 'linkText': 'Do something' },
@@ -59,7 +59,7 @@ module.exports = function (app) {
         title: 'Bear Essentials Massage - Seated Acupressure',
         'heading': 'Seated Acupressure',
         'subtitle': 'Improve the flow of energy',
-        pageName: 'seated_acupressure'
+        pageName: 'seatedAcupressure'
     };
 
     var spa = {
@@ -74,49 +74,54 @@ module.exports = function (app) {
         pageName: 'spa'
     };
 
-    app.get('/therapies/:selectedTherapy', function(req, res) {
-        var items = {}
-        if (req.params.selectedTherapy == 'sports-massage')
+    app.get('/therapies/:selectedTherapy', function (req, res) {
+        
+        if (req.params.selectedTherapy === 'sports-massage') {
             res.render('therapies/' + req.params.selectedTherapy, {
-                'carouselItems': sports_massage.items,
-                'title': sports_massage.title,
-                'pageName': sports_massage.pageName,
-                'heading': sports_massage.heading,
-                'subtitle': sports_massage.subtitle
+                'carouselItems': sportsMassage.items,
+                'title': sportsMassage.title,
+                'pageName': sportsMassage.pageName,
+                'heading': sportsMassage.heading,
+                'subtitle': sportsMassage.subtitle
             });
-        else if (req.params.selectedTherapy == 'sports-taping')
+        }
+        else if (req.params.selectedTherapy === 'sports-taping') {
             res.render('therapies/' + req.params.selectedTherapy, {
-                'carouselItems': sports_taping.items,
-                'title': sports_taping.title,
-                'pageName': sports_taping.pageName,
-                'heading': sports_taping.heading,
-                'subtitle': sports_taping.subtitle
+                'carouselItems': sportsTaping.items,
+                'title': sportsTaping.title,
+                'pageName': sportsTaping.pageName,
+                'heading': sportsTaping.heading,
+                'subtitle': sportsTaping.subtitle
             });
-        else if (req.params.selectedTherapy == 'hot-stones-massage')
+        }
+        else if (req.params.selectedTherapy === 'hot-stones-massage') {
             res.render('therapies/' + req.params.selectedTherapy, {
-                'carouselItems': hot_stones_massage.items,
-                'title': hot_stones_massage.title,
-                'pageName': hot_stones_massage.pageName,
-                'heading': hot_stones_massage.heading,
-                'subtitle': hot_stones_massage.subtitle
+                'carouselItems': hotStonesMassage.items,
+                'title': hotStonesMassage.title,
+                'pageName': hotStonesMassage.pageName,
+                'heading': hotStonesMassage.heading,
+                'subtitle': hotStonesMassage.subtitle
             });
-        else if (req.params.selectedTherapy == 'pregnancy-massage')
+        }
+        else if (req.params.selectedTherapy === 'pregnancy-massage') {
             res.render('therapies/' + req.params.selectedTherapy, {
-                'carouselItems': pregnancy_massage.items,
-                'title': pregnancy_massage.title,
-                'pageName': pregnancy_massage.pageName,
-                'heading': pregnancy_massage.heading,
-                'subtitle': pregnancy_massage.subtitle
+                'carouselItems': pregnancyMassage.items,
+                'title': pregnancyMassage.title,
+                'pageName': pregnancyMassage.pageName,
+                'heading': pregnancyMassage.heading,
+                'subtitle': pregnancyMassage.subtitle
             });
-        else if (req.params.selectedTherapy == 'seated-acupressure')
+        }
+        else if (req.params.selectedTherapy === 'seated-acupressure') {
             res.render('therapies/' + req.params.selectedTherapy, {
-                'carouselItems': seated_acupressure.items,
-                'title': seated_acupressure.title,
-                'pageName': seated_acupressure.pageName,
-                'heading': seated_acupressure.heading,
-                'subtitle': seated_acupressure.subtitle
+                'carouselItems': seatedAcupressure.items,
+                'title': seatedAcupressure.title,
+                'pageName': seatedAcupressure.pageName,
+                'heading': seatedAcupressure.heading,
+                'subtitle': seatedAcupressure.subtitle
             });
-        else
+        }
+        else {
             res.render('therapies/' + req.params.selectedTherapy, {
                 'carouselItems': spa.items,
                 'title': spa.title,
@@ -124,5 +129,6 @@ module.exports = function (app) {
                 'heading': spa.heading,
                 'subtitle': spa.subtitle
             });
+        }
     });
 };
