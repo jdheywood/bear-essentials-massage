@@ -83,6 +83,31 @@ body {
 }
 
 
+.navbar-inverse {
+    background-color: #E8D0BD;
+    border-color: #E8D0BD;
+}
+
+.navbar-inverse .navbar-collapse, 
+.navbar-inverse .navbar-form {
+    border-color: #E8D0BD;
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:hover, 
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #E8D0BD;
+}
+
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:hover, 
+.navbar-inverse .navbar-nav>.open>a:focus {
+    color: #fff;
+    background-color: #E8D0BD;
+}
+
+
 /* Featurettes
 ------------------------- */
 

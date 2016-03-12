@@ -1,0 +1,7 @@
+html,
+body.prices {
+  height: 100%;
+  background: #333 url("../../../../img/bandstand.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}

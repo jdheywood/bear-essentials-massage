@@ -1,0 +1,114 @@
+doctype html
+html(lang='en')
+  head
+    include partials/head.jade
+
+    // Custom styles for this template
+    link(href='/css/cover.css', rel='stylesheet')
+    link(href='/css/prices.css', rel='stylesheet')
+    
+  body(class='#{imageClass}')
+    .site-wrapper
+      .site-wrapper-inner
+        .cover-container
+          .masthead.clearfix.prices
+            .inner
+              h1.masthead-brand #{heading}
+              include partials/navigation-cover.jade
+          .inner.cover.prices
+            h2.cover-heading #{subtitle}
+            p.lead
+              | #{bodyText}
+            .row
+              .col-sm-12
+                .alert.alert-success(role='alert')
+                  strong Promo Code<br/>
+                  | To receive a £5 off your treatment please quote 5BEARS when booking your treatment (new customers only)
+            .row
+              .col-sm-4
+                .panel.panel-default
+                  .panel-heading
+                    h3.panel-title Sports Massage
+                    .panel-body
+                      table.table
+                        tbody
+                          tr
+                            td 60 minutes
+                            td &pound;37.00
+                          tr
+                            td 45 minutes
+                            td &pound;30.00
+                          tr
+                            td 30 minutes
+                            td &pound;25.00
+              .col-sm-4
+                .panel.panel-default
+                  .panel-heading
+                    h3.panel-title Hot Stones Massage
+                    .panel-body
+                      table.table
+                        tbody
+                          tr
+                            td 90 minutes
+                            td &pound;45.00
+                          tr
+                            td 60 minutes
+                            td &pound;37.00
+                          tr
+                            td 60 mins (with deep tissue)
+                            td &pound;40.00
+              .col-sm-4
+                .panel.panel-default
+                  .panel-heading
+                    h3.panel-title Pregnancy Massage
+                    .panel-body
+                      table.table
+                        tbody
+                          tr
+                            td 60 minutes
+                            td &pound;37.00
+            .row
+              .col-sm-12
+                .panel.panel-default
+                  .panel-heading
+                    h3.panel-title Seated Acupressure Massage
+                    .panel-body
+                      table.table
+                        tbody
+                          tr
+                            td Day Rate (corporate)
+                            td &pound;150.00 (includes seven hours of up to 18 x 15 mins chair massages with a short consultation for new clients and prep)
+                          tr
+                            td Half Day Rate (corporate)
+                            td &pound;100.00 (includes four hours of up to 10 x 15 mins chair massages with a short consultation for new clients and prep)
+                          tr
+                            td 15 mins (non-corporate)
+                            td &pound;11.00 (a minimum of 5 clients per visit and turnaround)
+            .row
+              .col-sm-12
+                .panel.panel-default
+                  .panel-heading
+                    h3.panel-title Sports Taping
+                    .panel-body
+                      p
+                        | Sports taping is also available with sports massage to be agreed per consultation
+                      table.table
+                        tbody
+                          tr
+                            td 45 minutes
+                            td &pound;30.00 (Initial consultations including treatment)
+                          tr
+                            td 45 minutes
+                            td &pound;27.00 (follow up including treatment)
+
+            p.lead
+              a.btn.btn-lg.btn-default(href='#{ctaLink}') #{ctaText}
+          .prices-footer
+            include partials/footer-cover.jade
+    
+    // Bootstrap core JavaScript
+    // ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='/js/jquery-1.12.1.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/holder.js')

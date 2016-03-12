@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: #333 url("../../../../img/bowl-1.jpg") no-repeat center;
+  background-color: #333;
   background-size: cover;
 }
 body {
@@ -35,21 +35,7 @@ body {
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
-body.home {
-  height: 100%;
-  background: #333 url("../../../../img/bowl-1.jpg") no-repeat center;
-  background-size: cover;
-}
-body.prices {
-  height: 100%;
-  background: #333 url("../../../../img/spa-4.jpg") no-repeat center;
-  background-size: cover;
-}
-body.contact {
-  height: 100%;
-  background: #333 url("../../../../img/spa-3.jpg") no-repeat center;
-  background-size: cover;
-}
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -143,6 +129,10 @@ ul.masthead-nav {
   font-weight: bold;
 }
 
+.cover.prices {
+  padding: 0 20px;
+}
+
 
 /*
  * Footer
@@ -153,6 +143,48 @@ ul.masthead-nav {
   color: rgba(255,255,255,.5);
 }
 
+/* 
+ * Customisations for price list
+ */
+
+.well {
+  background-color: #B78D8D;
+}
+
+.panel {
+  opacity: 0.8;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #E8D0BD;
+    border-color: #ddd;
+    text-shadow: none;
+}
+
+.table>thead>tr>th {
+    text-align: center;
+}
+
+.alert-success, .alert-info {
+    text-shadow: none;
+}
+
+a.contact {
+  color: #337ab7;
+}
+
+.open>.dropdown-menu {
+    text-shadow: none;
+}
+
+
+@media (min-width: 468px) {
+  .alert.alert-info strong,
+  .alert.alert-info a {
+    font-size: 20px;
+  }
+}
 
 /*
  * Affix and center
@@ -162,14 +194,23 @@ ul.masthead-nav {
   .cover {
     padding: 0 20px;
   }
+  /*.cover.prices {
+    padding: 100px 20px 0 20px;
+  }*/
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
     top: 0;
   }
+  .masthead.prices {
+    position: static;
+  }
   .mastfoot {
     position: fixed;
     bottom: 0;
+  }
+  .prices-footer>.mastfoot {
+    position: static; 
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -181,15 +222,25 @@ ul.masthead-nav {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+  .alert.alert-info strong,
+  .alert.alert-info a {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 992px) {
   .cover {
     padding: 0 20px;
   }
+  /*.cover.prices {
+    padding: 100px 20px 0 20px;
+  }*/
   .masthead,
   .mastfoot,
   .cover-container {
     width: 900px;
+  }
+  .prices-footer>.mastfoot {
+    position: static; 
   }
 }

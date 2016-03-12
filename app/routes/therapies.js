@@ -5,9 +5,9 @@ module.exports = function (app) {
 
     var sportsMassage = {
         items: [
-            { 'id': 0, 'src': '/img/sports-2.jpg', 'alt': 'sports 2', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '#', 'linkText': 'Call to action' },
-            { 'id': 1, 'src': '/img/sports-4.jpg', 'alt': 'sports 4', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '#', 'linkText': 'Do something' },
-            { 'id': 2, 'src': '/img/sports-5.jpg', 'alt': 'sports 5', 'heading': '', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': '#', 'linkText': 'Or not wevs' }
+            { 'id': 0, 'src': '/img/sports-2.jpg', 'alt': 'sports 2', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
+            { 'id': 1, 'src': '/img/sports-4.jpg', 'alt': 'sports 4', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 2, 'src': '/img/sports-5.jpg', 'alt': 'sports 5', 'heading': '', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Sports Massage',
         'heading': 'Sports Massage',
@@ -17,9 +17,9 @@ module.exports = function (app) {
 
     var sportsTaping = {
         items: [
-            { 'id': 0, 'src': '/img/taping-2.jpg', 'alt': 'taping 2', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '#', 'linkText': 'Call to action' },
-            { 'id': 1, 'src': '/img/taping-3.jpg', 'alt': 'taping 3', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '#', 'linkText': 'Do something' },
-            { 'id': 2, 'src': '/img/taping-4.jpg', 'alt': 'taping 4', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '#', 'linkText': 'Do something' }
+            { 'id': 0, 'src': '/img/taping-2.jpg', 'alt': 'taping 2', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
+            { 'id': 1, 'src': '/img/taping-3.jpg', 'alt': 'taping 3', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 2, 'src': '/img/taping-4.jpg', 'alt': 'taping 4', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Sports Taping',
         'heading': 'Sports Taping',
@@ -29,9 +29,9 @@ module.exports = function (app) {
 
     var hotStonesMassage = {
         items: [
-            { 'id': 0, 'src': '/img/stones-3.jpg', 'alt': 'stones 3', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '#', 'linkText': 'Call to action' },
-            { 'id': 1, 'src': '/img/stones-7.jpg', 'alt': 'stones 7', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '#', 'linkText': 'Do something' },
-            { 'id': 2, 'src': '/img/stones-8.jpg', 'alt': 'stones 8', 'heading': '', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': '#', 'linkText': 'Or not wevs' }
+            { 'id': 0, 'src': '/img/stones-3.jpg', 'alt': 'stones 3', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
+            { 'id': 1, 'src': '/img/stones-7.jpg', 'alt': 'stones 7', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 2, 'src': '/img/stones-8.jpg', 'alt': 'stones 8', 'heading': '', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Hot Stones Massage',
         'heading': 'Hot Stones Massage',
@@ -41,9 +41,9 @@ module.exports = function (app) {
 
     var pregnancyMassage = {
         items: [
-            { 'id': 0, 'src': '/img/pregnancy-4.jpg', 'alt': 'pregnancy 4', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '#', 'linkText': 'Call to action' },
-            { 'id': 1, 'src': '/img/pregnancy-1.jpg', 'alt': 'pregnancy 1', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '#', 'linkText': 'Do something' },
-            { 'id': 2, 'src': '/img/pregnancy-5.jpg', 'alt': 'pregnancy 5', 'heading': '', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': '#', 'linkText': 'Or not wevs' }
+            { 'id': 0, 'src': '/img/pregnancy-4.jpg', 'alt': 'pregnancy 4', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
+            { 'id': 1, 'src': '/img/pregnancy-1.jpg', 'alt': 'pregnancy 1', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 2, 'src': '/img/pregnancy-5.jpg', 'alt': 'pregnancy 5', 'heading': '', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Pregnancy Massage',
         'heading': 'Pregnancy Massage',
@@ -53,9 +53,9 @@ module.exports = function (app) {
 
     var seatedAcupressure = {
         items: [
-            { 'id': 0, 'src': '/img/seated-1.jpg', 'alt': 'seated 1', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '#', 'linkText': 'Call to action' },
-            { 'id': 1, 'src': '/img/seated-6.jpg', 'alt': 'seated 6', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '#', 'linkText': 'Do something' },
-            { 'id': 2, 'src': '/img/seated-3.jpg', 'alt': 'seated 3', 'heading': '', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': '#', 'linkText': 'Or not wevs' }
+            { 'id': 0, 'src': '/img/seated-1.jpg', 'alt': 'seated 1', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
+            { 'id': 1, 'src': '/img/seated-6.jpg', 'alt': 'seated 6', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 2, 'src': '/img/seated-3.jpg', 'alt': 'seated 3', 'heading': '', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Seated Acupressure',
         'heading': 'Seated Acupressure',
@@ -65,9 +65,9 @@ module.exports = function (app) {
 
     var spa = {
         items: [
-            { 'id': 0, 'src': '/img/spa-1.jpg', 'alt': 'spa 1', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '#', 'linkText': 'Call to action' },
-            { 'id': 1, 'src': '/img/spa-2.jpg', 'alt': 'spa 2', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '#', 'linkText': 'Do something' },
-            { 'id': 2, 'src': '/img/spa-4.jpg', 'alt': 'spa 4', 'heading': '', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': '#', 'linkText': 'Or not wevs' }
+            { 'id': 0, 'src': '/img/spa-1.jpg', 'alt': 'spa 1', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
+            { 'id': 1, 'src': '/img/spa-2.jpg', 'alt': 'spa 2', 'heading': '', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 2, 'src': '/img/spa-4.jpg', 'alt': 'spa 4', 'heading': '', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Spa',
         'heading': 'Spa',
