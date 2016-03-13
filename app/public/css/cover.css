@@ -179,6 +179,11 @@ a.contact {
 }
 
 
+
+strong.fa.fa-facebook-square {
+  font-weight: bold;
+}
+
 @media (min-width: 468px) {
   .alert.alert-info strong,
   .alert.alert-info a {
