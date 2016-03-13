@@ -122,6 +122,10 @@ body {
   letter-spacing: -1px;
 }
 
+.text-center.pad-top {
+  padding-top: 30px
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

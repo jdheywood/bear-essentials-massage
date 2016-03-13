@@ -47,8 +47,8 @@ module.exports = function (app) {
             'heading': 'Contact',
             'subtitle': 'If you need to get in touch just drop me a line via...',
             'bodyText': 'Phone, email or facebook, its all gravy, get in touch and book an appointment now',
-            'ctaText': 'lipsum',
-            'ctaLink': '/',
+            'ctaText': 'Book now',
+            'ctaLink': 'mailto:patricia@bearessentialsmassage.co.uk',
             'imageClass': 'contact',
             'pageName': 'contact'
         });
