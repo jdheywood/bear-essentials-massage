@@ -35,7 +35,7 @@ module.exports = function (app) {
             'subtitle': 'View our full price list here.',
             'bodyText': 'We have a wide range of therapies and sessions available, for enquiries on block bookings and tailored sessions please contact me to discuss prices.',
             'ctaText': 'Book Now',
-            'ctaLink': 'mailto:patricia@bearessentialsmassage.co.uk',
+            'ctaLink': 'mailto:patricia@bearessentialsmassage.co.uk?subject=Booking enquiry',
             'imageClass': 'prices',
             'pageName': 'prices'
         });
@@ -48,7 +48,7 @@ module.exports = function (app) {
             'subtitle': 'Contact me for bookings and enquiries via phone, email or facebook.',
             'bodyText': 'Just drop me a line and I can help you with any queries you may have, help to identify the most suitable treatments for you and book an appointment',
             'ctaText': 'Book now',
-            'ctaLink': 'mailto:patricia@bearessentialsmassage.co.uk',
+            'ctaLink': 'mailto:patricia@bearessentialsmassage.co.uk?subject=Booking enquiry',
             'imageClass': 'contact',
             'pageName': 'contact'
         });
