@@ -32,8 +32,8 @@ module.exports = function (app) {
         res.render('prices', {
             'title': 'Bear Essentials Massage - Price List',
             'heading': 'Price List',
-            'subtitle': 'This is the subtitle, it should say something interesting',
-            'bodyText': 'Check out our amazing prices for these awesome treatments and stuff, get involved!',
+            'subtitle': 'View our full price list here.',
+            'bodyText': 'We have a wide range of therapies and sessions available, for enquiries on block bookings and tailored sessions please contact me to discuss prices.',
             'ctaText': 'Book Now',
             'ctaLink': 'mailto:patricia@bearessentialsmassage.co.uk',
             'imageClass': 'prices',
@@ -45,8 +45,8 @@ module.exports = function (app) {
         res.render('contact', {
             'title': 'Bear Essentials Massage - Contact',
             'heading': 'Contact',
-            'subtitle': 'If you need to get in touch just drop me a line via...',
-            'bodyText': 'Phone, email or facebook, its all gravy, get in touch and book an appointment now',
+            'subtitle': 'Contact me for bookings and enquiries via phone, email or facebook.',
+            'bodyText': 'Just drop me a line and I can help you with any queries you may have, help to identify the most suitable treatments for you and book an appointment',
             'ctaText': 'Book now',
             'ctaLink': 'mailto:patricia@bearessentialsmassage.co.uk',
             'imageClass': 'contact',
