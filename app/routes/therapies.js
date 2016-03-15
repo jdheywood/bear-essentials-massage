@@ -5,7 +5,7 @@ module.exports = function (app) {
 
     var sportsMassage = {
         items: [
-            { 'id': 0, 'src': '/img/sports-2.jpg', 'alt': 'sports 2', 'heading': 'Sports Massage', 'text': 'Help maintain your body’s condition', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
+            { 'id': 0, 'src': '/img/sports-2-desktop.jpg', 'alt': 'sports 2', 'heading': 'Sports Massage', 'text': 'Help maintain your body’s condition', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
             { 'id': 1, 'src': '/img/sports-4.jpg', 'alt': 'sports 4', 'heading': 'Sports Massage', 'text': 'Prevent injuries and loss of mobility', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
             { 'id': 2, 'src': '/img/sports-5.jpg', 'alt': 'sports 5', 'heading': 'Sports Massage', 'text': 'Cure and restore injured soft tissues of the body', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
