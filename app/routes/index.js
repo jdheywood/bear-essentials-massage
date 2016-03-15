@@ -45,7 +45,7 @@ module.exports = function (app) {
         res.render('contact', {
             'title': 'Bear Essentials Massage - Contact',
             'heading': 'Contact',
-            'subtitle': 'Contact me for bookings and enquiries via phone, email or facebook.',
+            'subtitle': 'Contact me for bookings and enquiries.',
             'bodyText': 'Just drop me a line and I can help you with any queries you may have, help to identify the most suitable treatments for you and book an appointment',
             'ctaText': 'Book now',
             'ctaLink': 'mailto:patricia@bearessentialsmassage.co.uk?subject=Booking enquiry',
