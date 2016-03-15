@@ -151,7 +151,7 @@ ul.masthead-nav {
 }
 
 .panel {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .panel-default>.panel-heading {
@@ -185,7 +185,7 @@ strong.fa.fa-facebook-square {
 }
 
 .col-sm-12.opaque {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 @media (min-width: 468px) {
