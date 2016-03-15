@@ -83,28 +83,33 @@ body {
 }
 
 
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+
 .navbar-inverse {
-    background-color: #E8D0BD;
-    border-color: #E8D0BD;
+  color: #fff;
+  background-color: #3E5075;
+  border-color: #3E5075;
 }
 
 .navbar-inverse .navbar-collapse, 
 .navbar-inverse .navbar-form {
-    border-color: #E8D0BD;
+  border-color: #3E5075;
 }
 
 .navbar-inverse .navbar-nav>.active>a, 
 .navbar-inverse .navbar-nav>.active>a:hover, 
 .navbar-inverse .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #E8D0BD;
+  color: #fff;
+  background-color: #3E5075;
 }
 
 .navbar-inverse .navbar-nav>.open>a, 
 .navbar-inverse .navbar-nav>.open>a:hover, 
 .navbar-inverse .navbar-nav>.open>a:focus {
-    color: #fff;
-    background-color: #E8D0BD;
+  color: #fff;
+  background-color: #3E5075;
 }
 
 

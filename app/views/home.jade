@@ -16,9 +16,16 @@ html(lang='en')
               h1.masthead-brand #{heading}
               include partials/navigation-cover.jade
           .inner.cover
-            h2.cover-heading #{subtitle}
-            p.lead
-              | #{bodyText}
+
+            .row
+              .col-sm-12
+                .panel.panel-default
+                  .panel-heading.home
+                    h2.cover-heading #{subtitle}
+                    .panel-body
+                      p.lead
+                        | #{bodyText}
+
             p.lead
               a.btn.btn-lg.btn-default(href='#{ctaLink}') #{ctaText}
           include partials/footer-cover.jade

@@ -155,9 +155,16 @@ ul.masthead-nav {
 }
 
 .panel-default>.panel-heading {
-    color: #333;
-    background-color: #E8D0BD;
-    border-color: #ddd;
+    color: #fff;
+    background-color: #20345D;
+    border-color: #20345D;
+    text-shadow: none;
+}
+
+.panel-default>.panel-heading.home {
+    color: #fff;
+    background-color: #20345D;
+    border-color: #20345D;
     text-shadow: none;
 }
 
@@ -167,10 +174,6 @@ ul.masthead-nav {
 
 .alert-success, .alert-info {
     text-shadow: none;
-}
-
-a.contact {
-  color: #337ab7;
 }
 
 .open>.dropdown-menu {

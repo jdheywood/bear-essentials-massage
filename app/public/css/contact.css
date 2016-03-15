@@ -6,3 +6,13 @@ body.contact {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.alert.alert-info.contact {
+  color: #fff;
+  background-color: #3E5075;
+  border-color: #3E5075;
+}
+
+a.contact {
+  color: #fff;
+}

@@ -6,3 +6,10 @@ body.home {
   -o-background-size: cover;
   background-size: cover;
 }
+
+@media (min-width: 768px) {
+  html,
+  body {
+	height: 100%;
+  }
+}
