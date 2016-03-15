@@ -1,7 +1,8 @@
 html, 
 body.contact {
-  height: 100%;
-  background: #333 url("../../../../img/contact.jpg") no-repeat center;
+  background: url("../../../../img/contact.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
 }
