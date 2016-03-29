@@ -1,0 +1,20 @@
+html,
+body.about {
+  background: url("../../../../img/bandstand.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .cover.about {
+    margin-top: 145px;
+  }
+  .masthead.clearfix.about {
+  	position: static;
+  }
+  .mastfoot.about {
+  	position: static;
+  }
+}

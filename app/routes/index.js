@@ -33,7 +33,7 @@ module.exports = function (app) {
             'title': 'Bear Essentials Massage - Price List',
             'heading': 'Price List',
             'subtitle': 'View our full price list here.',
-            'bodyText': 'We have a wide range of therapies and sessions available, for enquiries on block bookings and tailored sessions please contact me to discuss prices.',
+            'bodyText': 'We have a wide range of therapies and sessions available, for enquiries, bookings and tailored sessions please contact us.',
             'ctaText': 'Book Now',
             'ctaLink': 'mailto:patricia@bearessentialsmassage.co.uk?subject=Booking enquiry',
             'imageClass': 'prices',
@@ -43,14 +43,27 @@ module.exports = function (app) {
 
     app.get('/contact', function (req, res) {
         res.render('contact', {
-            'title': 'Bear Essentials Massage - Contact',
-            'heading': 'Contact',
-            'subtitle': 'Contact me for bookings and enquiries.',
-            'bodyText': 'Just drop me a line and I can help you with any queries you may have, help to identify the most suitable treatments for you and book an appointment',
+            'title': 'Bear Essentials Massage - Contact Us',
+            'heading': 'Contact Us',
+            'subtitle': 'Contact us for bookings and enquiries.',
+            'bodyText': 'Drop us a line and we will help you with any queries you may have. We will help to identify the the best and most suitable treatment for you and book your appointment.',
             'ctaText': 'Book now',
             'ctaLink': 'mailto:patricia@bearessentialsmassage.co.uk?subject=Booking enquiry',
             'imageClass': 'contact',
             'pageName': 'contact'
+        });
+    });
+
+    app.get('/about', function (req, res) {
+        res.render('about', {
+            'title': 'Bear Essentials Massage - About Us',
+            'heading': 'About Us',
+            'subtitle': 'Our story.',
+            'bodyText': 'Lipsum',
+            'ctaText': 'Price List',
+            'ctaLink': '/price-list',
+            'imageClass': 'about',
+            'pageName': 'about'
         });
     });
 

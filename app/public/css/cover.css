@@ -106,7 +106,7 @@ ul.masthead-nav {
   background-color: transparent;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 875px) {
   .masthead-brand {
     float: left;
   }
@@ -121,7 +121,7 @@ ul.masthead-nav {
  */
 
 .cover {
-  padding: 100px 20px 0 20px;
+  padding: 120px 20px 0 20px;
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -139,7 +139,7 @@ ul.masthead-nav {
 
 .mastfoot {
   color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,1);
 }
 
 /* 
@@ -188,6 +188,10 @@ strong.fa.fa-facebook-square {
     opacity: 0.8;
 }
 
+.nav {
+    padding-left: 3px;
+}
+
 @media (min-width: 468px) {
   .alert.alert-info strong,
   .alert.alert-info a {
@@ -202,6 +206,7 @@ strong.fa.fa-facebook-square {
 @media (min-width: 768px) {
   .cover {
     padding: 0 20px;
+    margin-top: 130px;
   }
   /*.cover.prices {
     padding: 100px 20px 0 20px;

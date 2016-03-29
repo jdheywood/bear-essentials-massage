@@ -19,7 +19,7 @@ module.exports = function (app) {
         items: [
             { 'id': 0, 'src': '/img/taping-2.jpg', 'alt': 'taping 2', 'heading': 'Sports Taping', 'text': 'Reduction of pain by removing the pressure from the pain receptors', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
             { 'id': 1, 'src': '/img/taping-3.jpg', 'alt': 'taping 3', 'heading': 'Sports Taping', 'text': 'Adjusts mis-alignments of joints to aid fascia and muscles function', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
-            { 'id': 2, 'src': '/img/taping-4.jpg', 'alt': 'taping 4', 'heading': 'Sports Taping', 'text': 'Reconditions abnormal tension and strengthen the muscles', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
+            { 'id': 2, 'src': '/img/taping-4.jpg', 'alt': 'taping 4', 'heading': 'Sports Taping', 'text': 'Reconditions abnormal tension and strengthens the muscles', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Sports Taping',
         'heading': 'Sports Taping',
@@ -29,25 +29,25 @@ module.exports = function (app) {
 
     var hotStonesMassage = {
         items: [
-            { 'id': 0, 'src': '/img/stones-3.jpg', 'alt': 'stones 3', 'heading': 'Hot Stones Massage', 'text': 'Cleanse the body, aid relaxation of the heart and soothe the mind', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
+            { 'id': 0, 'src': '/img/stones-3.jpg', 'alt': 'stones 3', 'heading': 'Hot Stones Massage', 'text': 'Cleanses the body, aids relaxation of the heart and soothes the mind', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
             { 'id': 1, 'src': '/img/stones-7.jpg', 'alt': 'stones 7', 'heading': 'Hot Stones Massage', 'text': 'Combines the use of heat and massage strokes to provide a healing and effective experience', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
-            { 'id': 2, 'src': '/img/stones-8.jpg', 'alt': 'stones 8', 'heading': 'Hot Stones Massage', 'text': 'Assistance with joint problems, back pain and sore muscles', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
+            { 'id': 2, 'src': '/img/stones-8.jpg', 'alt': 'stones 8', 'heading': 'Hot Stones Massage', 'text': 'The warmth and the gentle pressure of the stones on the body helps to promote a very relaxing experience', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Hot Stones Massage',
         'heading': 'Hot Stones Massage',
-        'subtitle': 'Healing and effective',
+        'subtitle': 'Healing and relaxing',
         pageName: 'hotStonesMassage'
     };
 
     var pregnancyMassage = {
         items: [
             { 'id': 0, 'src': '/img/pregnancy-4.jpg', 'alt': 'pregnancy 4', 'heading': 'Pregnancy Massage', 'text': 'Provides deep relaxation along with emotional and physiological wellbeing for both mother and baby', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
-            { 'id': 1, 'src': '/img/pregnancy-1.jpg', 'alt': 'pregnancy 1', 'heading': 'Pregnancy Massage', 'text': 'Reduce back pain and general aches from pregnancy', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 1, 'src': '/img/pregnancy-1.jpg', 'alt': 'pregnancy 1', 'heading': 'Pregnancy Massage', 'text': 'Reduces back pain and general aches from pregnancy', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
             { 'id': 2, 'src': '/img/pregnancy-5.jpg', 'alt': 'pregnancy 5', 'heading': 'Pregnancy Massage', 'text': 'Reduce stress, blood pressure and fluid retention', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Pregnancy Massage',
         'heading': 'Pregnancy Massage',
-        'subtitle': 'Deep relaxation and wellbeing',
+        'subtitle': 'Deep relaxation',
         pageName: 'pregnancyMassage'
     };
 
@@ -59,7 +59,7 @@ module.exports = function (app) {
         ],
         title: 'Bear Essentials Massage - Seated Acupressure',
         'heading': 'Seated Acupressure',
-        'subtitle': 'Improve the flow of energy',
+        'subtitle': 'Improves the flow of energy',
         pageName: 'seatedAcupressure'
     };
 
