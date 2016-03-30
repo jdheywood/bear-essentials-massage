@@ -6,7 +6,7 @@ module.exports = function (app) {
     var sportsMassage = {
         items: [
             { 'id': 0, 'src': '/img/desktop-sports-2.jpg', 'alt': 'sports 2', 'heading': 'Sports Massage', 'text': 'Help maintain your body’s condition', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
-            { 'id': 1, 'src': '/img/desktop-sports-4.jpg', 'alt': 'sports 4', 'heading': 'Sports Massage', 'text': 'Prevent injuries and loss of mobility', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 1, 'src': '/img/desktop-sports-4.jpg', 'alt': 'sports 4', 'heading': 'Sports Massage', 'text': 'Prevent injuries and loss of mobility', 'linkUrl': '../../../contact', 'linkText': 'Contact us' },
             { 'id': 2, 'src': '/img/desktop-sports-5.jpg', 'alt': 'sports 5', 'heading': 'Sports Massage', 'text': 'Cure and restore injured soft tissues of the body', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Sports Massage',
@@ -18,7 +18,7 @@ module.exports = function (app) {
     var sportsTaping = {
         items: [
             { 'id': 0, 'src': '/img/desktop-taping-2.jpg', 'alt': 'taping 2', 'heading': 'Sports Taping', 'text': 'Reduction of pain by removing the pressure from the pain receptors', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
-            { 'id': 1, 'src': '/img/desktop-taping-3.jpg', 'alt': 'taping 3', 'heading': 'Sports Taping', 'text': 'Adjusts mis-alignments of joints to aid fascia and muscles function', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 1, 'src': '/img/desktop-taping-3.jpg', 'alt': 'taping 3', 'heading': 'Sports Taping', 'text': 'Adjusts mis-alignments of joints to aid fascia and muscles function', 'linkUrl': '../../../contact', 'linkText': 'Contact us' },
             { 'id': 2, 'src': '/img/desktop-taping-4.jpg', 'alt': 'taping 4', 'heading': 'Sports Taping', 'text': 'Reconditions abnormal tension and strengthens the muscles', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Sports Taping',
@@ -30,7 +30,7 @@ module.exports = function (app) {
     var hotStonesMassage = {
         items: [
             { 'id': 0, 'src': '/img/desktop-stones-3.jpg', 'alt': 'stones 3', 'heading': 'Hot Stones Massage', 'text': 'Cleanses the body, aids relaxation of the heart and soothes the mind', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
-            { 'id': 1, 'src': '/img/desktop-stones-7.jpg', 'alt': 'stones 7', 'heading': 'Hot Stones Massage', 'text': 'Combines the use of heat and massage strokes to provide a healing and effective experience', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 1, 'src': '/img/desktop-stones-7.jpg', 'alt': 'stones 7', 'heading': 'Hot Stones Massage', 'text': 'Combines the use of heat and massage strokes to provide a healing and effective experience', 'linkUrl': '../../../contact', 'linkText': 'Contact us' },
             { 'id': 2, 'src': '/img/desktop-stones-8.jpg', 'alt': 'stones 8', 'heading': 'Hot Stones Massage', 'text': 'The warmth and the gentle pressure of the stones on the body helps to promote a very relaxing experience', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Hot Stones Massage',
@@ -42,7 +42,7 @@ module.exports = function (app) {
     var pregnancyMassage = {
         items: [
             { 'id': 0, 'src': '/img/desktop-pregnancy-4.jpg', 'alt': 'pregnancy 4', 'heading': 'Pregnancy Massage', 'text': 'Provides deep relaxation along with emotional and physiological wellbeing for both mother and baby', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
-            { 'id': 1, 'src': '/img/desktop-pregnancy-1.jpg', 'alt': 'pregnancy 1', 'heading': 'Pregnancy Massage', 'text': 'Reduces back pain and general aches from pregnancy', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 1, 'src': '/img/desktop-pregnancy-1.jpg', 'alt': 'pregnancy 1', 'heading': 'Pregnancy Massage', 'text': 'Reduces back pain and general aches from pregnancy', 'linkUrl': '../../../contact', 'linkText': 'Contact us' },
             { 'id': 2, 'src': '/img/desktop-pregnancy-5.jpg', 'alt': 'pregnancy 5', 'heading': 'Pregnancy Massage', 'text': 'Reduce stress, blood pressure and fluid retention', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Pregnancy Massage',
@@ -54,7 +54,7 @@ module.exports = function (app) {
     var seatedAcupressure = {
         items: [
             { 'id': 0, 'src': '/img/desktop-seated-1.jpg', 'alt': 'seated 1', 'heading': 'Seated Acupressure', 'text': 'Stimulates the acupressure points in the head, neck, shoulders, spine and lower back', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
-            { 'id': 1, 'src': '/img/desktop-seated-6.jpg', 'alt': 'seated 6', 'heading': 'Seated Acupressure', 'text': 'Balances and strengthens the body’s muscular, circulatory and nervous systems', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 1, 'src': '/img/desktop-seated-6.jpg', 'alt': 'seated 6', 'heading': 'Seated Acupressure', 'text': 'Balances and strengthens the body’s muscular, circulatory and nervous systems', 'linkUrl': '../../../contact', 'linkText': 'Contact us' },
             { 'id': 2, 'src': '/img/desktop-seated-3.jpg', 'alt': 'seated 3', 'heading': 'Seated Acupressure', 'text': 'Improves the flow of energy around the body', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Seated Acupressure',
@@ -66,7 +66,7 @@ module.exports = function (app) {
     var spa = {
         items: [
             { 'id': 0, 'src': '/img/spa-1.jpg', 'alt': 'spa 1', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
-            { 'id': 1, 'src': '/img/spa-2.jpg', 'alt': 'spa 2', 'heading': 'Lorem ipsum', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '../../../contact', 'linkText': 'Contact me' },
+            { 'id': 1, 'src': '/img/spa-2.jpg', 'alt': 'spa 2', 'heading': 'Lorem ipsum', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '../../../contact', 'linkText': 'Contact us' },
             { 'id': 2, 'src': '/img/spa-4.jpg', 'alt': 'spa 4', 'heading': 'Lorem ipsum', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Spa',
