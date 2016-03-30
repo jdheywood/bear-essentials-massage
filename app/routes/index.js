@@ -67,21 +67,4 @@ module.exports = function (app) {
         });
     });
 
-    app.get('/examples', function (req, res) {
-        res.render('examples', {});
-    });
-
-    app.get('/sample', function (req, res) {
-        res.render('sample', {
-            'pathToAssets': '/bootstrap-3.3.1',
-            'pathToSelectedTemplateWithinBootstrap' : '/bootstrap-3.3.1/docs/examples/carousel'
-        });
-    });
-
-    app.get('/template/:selectedTemplate', function (req, res) {
-        res.render('bootstrap3-templates/' + req.params.selectedTemplate, {
-            'pathToAssets': '/bootstrap-3.3.1',
-            'pathToSelectedTemplateWithinBootstrap' : '/bootstrap-3.3.1/docs/examples/' + req.params.selectedTemplate
-        });
-    });
 };
