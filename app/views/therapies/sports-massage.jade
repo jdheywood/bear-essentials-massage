@@ -5,6 +5,8 @@ html(lang='en')
 
     // Custom styles for this template
     link(href='/css/carousel.css', rel='stylesheet')
+    link(href='/css/polyfill.object-fit.css', rel='stylesheet')
+
   body
     include ../partials/navigation-carousel.jade
 
@@ -54,3 +56,7 @@ html(lang='en')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
     script(src='/js/bootstrap.min.js')
     script(src='/js/holder.js')
+    script(src='/js/polyfill.object-fit.min.js')
+
+    script
+      objectFit.polyfill({ selector: 'img', fittype: 'cover', disableCrossDomain: 'true' });
