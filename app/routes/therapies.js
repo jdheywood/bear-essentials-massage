@@ -10,9 +10,11 @@ module.exports = function (app) {
             { 'id': 2, 'src': '/img/desktop-sports-5.jpg', 'alt': 'sports 5', 'heading': 'Sports Massage', 'text': 'Cure and restore injured soft tissues of the body', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Sports Massage',
-        'heading': 'Sports Massage',
-        'subtitle': 'To aid recovery from injury',
-        pageName: 'sportsMassage'
+        heading: 'Sports Massage',
+        subtitle: 'To aid recovery from injury',
+        pageName: 'sportsMassage',
+        keywords: 'Sports Massage, Therapy, Treatment, Physical, Maintain, Condition, Prevent, Injury, Restore, Muscle, Tendon, Ligament, Fascia',
+        description: 'Sports massage is a physical treatment primarily used on the neuromusculoskeletal system. It can help maintain your body’s condition, prevent injuries and loss of mobility, cure and restore injured soft tissues of the body including the muscle, tendons, ligaments and fascia.'
     };
 
     var sportsTaping = {
@@ -22,9 +24,11 @@ module.exports = function (app) {
             { 'id': 2, 'src': '/img/desktop-taping-4.jpg', 'alt': 'taping 4', 'heading': 'Sports Taping', 'text': 'Reconditions abnormal tension and strengthens the muscles', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Sports Taping',
-        'heading': 'Sports Taping',
-        'subtitle': 'For support during recovery',
-        pageName: 'sportsTaping'
+        heading: 'Sports Taping',
+        subtitle: 'For support during recovery',
+        pageName: 'sportsTaping',
+        keywords: 'Sports Taping, Therapy, Treatment, Elastic, Tape, Skin, Support, Bones, Muscle, Range, Motion, Reduce, Pain, Aid, Recovery',
+        description: 'Sports taping uses an elastic therapeutic tape which is applied directly to the skin. By taping over and around the muscle the tape helps to maintain a stable position and gives support to the bones and muscles whilst keeping the full range of motion, this is turn reduces pain and helps recovery.'
     };
 
     var hotStonesMassage = {
@@ -34,9 +38,11 @@ module.exports = function (app) {
             { 'id': 2, 'src': '/img/desktop-stones-8.jpg', 'alt': 'stones 8', 'heading': 'Hot Stones Massage', 'text': 'The warmth and the gentle pressure of the stones on the body helps to promote a very relaxing experience', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Hot Stones Massage',
-        'heading': 'Hot Stones Massage',
-        'subtitle': 'Healing and relaxing',
-        pageName: 'hotStonesMassage'
+        heading: 'Hot Stones Massage',
+        subtitle: 'Healing and relaxing',
+        pageName: 'hotStonesMassage',
+        keywords: 'Hot Stone Massage, Therapy, Treatment, India, China, Basalt, Volcanic, Rock, Cleanse, Body, Relaxation, Heart, Soothe, Mind',
+        description: 'Hot Stones Massage originates over 2000 years ago from Ancient India and China. Using only Basalt (volcanic rock) it is believed that these specific stones can cleanse the body, aid relaxation of the heart and soothe the mind.'
     };
 
     var pregnancyMassage = {
@@ -46,9 +52,11 @@ module.exports = function (app) {
             { 'id': 2, 'src': '/img/desktop-pregnancy-5.jpg', 'alt': 'pregnancy 5', 'heading': 'Pregnancy Massage', 'text': 'Reduce stress, blood pressure and fluid retention', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Pregnancy Massage',
-        'heading': 'Pregnancy Massage',
-        'subtitle': 'Deep relaxation',
-        pageName: 'pregnancyMassage'
+        heading: 'Pregnancy Massage',
+        subtitle: 'Deep relaxation',
+        pageName: 'pregnancyMassage',
+        keywords: 'Pregnancy Massage, Therapy, Treatment, Deep, Relaxation, Emotional, Physiological, Wellbeing, Baby, Mother',
+        description: 'Pregnancy massage can offer deep relaxation along with emotional and physiological wellbeing for both the mother and her baby.'
     };
 
     var seatedAcupressure = {
@@ -58,9 +66,11 @@ module.exports = function (app) {
             { 'id': 2, 'src': '/img/desktop-seated-3.jpg', 'alt': 'seated 3', 'heading': 'Seated Acupressure', 'text': 'Improves the flow of energy around the body', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Seated Acupressure',
-        'heading': 'Seated Acupressure',
-        'subtitle': 'Improves the flow of energy',
-        pageName: 'seatedAcupressure'
+        heading: 'Seated Acupressure',
+        subtitle: 'Improves the flow of energy',
+        pageName: 'seatedAcupressure',
+        keywords: 'Seated Acupressure, Therapy, Treatment, Stimulates, Points, Head, Neck, Shoulders, Spine, Back, Relax, Soothe, Reduce, Stress',
+        description: 'Seated acupressure massage stimulates the acupressure points in the head, neck, shoulders, spine and lower back.'
     };
 
     var spa = {
@@ -70,9 +80,11 @@ module.exports = function (app) {
             { 'id': 2, 'src': '/img/spa-4.jpg', 'alt': 'spa 4', 'heading': 'Lorem ipsum', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
         ],
         title: 'Bear Essentials Massage - Spa',
-        'heading': 'Spa',
-        'subtitle': 'Here to help you recover, relax and rejuvenate.',
-        pageName: 'spa'
+        heading: 'Spa',
+        subtitle: 'Here to help you recover, relax and rejuvenate.',
+        pageName: 'spa',
+        keywords: 'Bear Essentials Massage, Spa',
+        description: 'Here to help you recover, relax and rejuvenate.'
     };
 
     app.get('/therapies/:selectedTherapy', function (req, res) {
@@ -83,7 +95,9 @@ module.exports = function (app) {
                 'title': sportsMassage.title,
                 'pageName': sportsMassage.pageName,
                 'heading': sportsMassage.heading,
-                'subtitle': sportsMassage.subtitle
+                'subtitle': sportsMassage.subtitle,
+                'keywords': sportsMassage.keywords,
+                'description': sportsMassage.description
             });
         }
         else if (req.params.selectedTherapy === 'sports-taping') {
@@ -92,7 +106,9 @@ module.exports = function (app) {
                 'title': sportsTaping.title,
                 'pageName': sportsTaping.pageName,
                 'heading': sportsTaping.heading,
-                'subtitle': sportsTaping.subtitle
+                'subtitle': sportsTaping.subtitle,
+                'keywords': sportsTaping.keywords,
+                'description': sportsTaping.description
             });
         }
         else if (req.params.selectedTherapy === 'hot-stones-massage') {
@@ -101,7 +117,9 @@ module.exports = function (app) {
                 'title': hotStonesMassage.title,
                 'pageName': hotStonesMassage.pageName,
                 'heading': hotStonesMassage.heading,
-                'subtitle': hotStonesMassage.subtitle
+                'subtitle': hotStonesMassage.subtitle,
+                'keywords': hotStonesMassage.keywords,
+                'description': hotStonesMassage.description
             });
         }
         else if (req.params.selectedTherapy === 'pregnancy-massage') {
@@ -110,7 +128,9 @@ module.exports = function (app) {
                 'title': pregnancyMassage.title,
                 'pageName': pregnancyMassage.pageName,
                 'heading': pregnancyMassage.heading,
-                'subtitle': pregnancyMassage.subtitle
+                'subtitle': pregnancyMassage.subtitle,
+                'keywords': pregnancyMassage.keywords,
+                'description': pregnancyMassage.description
             });
         }
         else if (req.params.selectedTherapy === 'seated-acupressure') {
@@ -119,7 +139,9 @@ module.exports = function (app) {
                 'title': seatedAcupressure.title,
                 'pageName': seatedAcupressure.pageName,
                 'heading': seatedAcupressure.heading,
-                'subtitle': seatedAcupressure.subtitle
+                'subtitle': seatedAcupressure.subtitle,
+                'keywords': seatedAcupressure.keywords,
+                'description': seatedAcupressure.description
             });
         }
         else {
@@ -128,7 +150,9 @@ module.exports = function (app) {
                 'title': spa.title,
                 'pageName': spa.pageName,
                 'heading': spa.heading,
-                'subtitle': spa.subtitle
+                'subtitle': spa.subtitle,
+                'keywords': spa.keywords,
+                'description': spa.description
             });
         }
     });
