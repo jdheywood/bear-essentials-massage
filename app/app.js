@@ -28,7 +28,6 @@ app.use(express.session({
     maxAge: 3600000
 }));
 
-
 //routes
 require('./routes/index')(app);
 require('./routes/therapies')(app);
