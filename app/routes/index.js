@@ -1,12 +1,10 @@
 
 'use strict';
 
-var path = require('path');
-
 module.exports = function (app) {
 
-    app.get('/google663ebf4a23a7ce5c.html', function (req, res) {
-        res.render('google');
+    app.get('/sitemap', function (req, res) {
+        res.render('sitemap');
     });
 
     app.get('/', function (req, res) {
