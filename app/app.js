@@ -12,6 +12,10 @@ var express = require('express'),
 
 var appConfig = require('./config/appConfig.json');
 
+//var mongo = require('mongodb');
+var monk = require('monk');
+var db = monk(appConfig.app.blogConnectionString);
+
 var app = express();
 
 // all environments
@@ -40,12 +44,17 @@ app.use(function (req, res, next) {
     next();
 });
 
+// Make our db accessible to our router
+app.use(function (req, res, next) {
+    req.db = db;
+    next();
+});
+
 // development only
 if ('development' === app.get('env')) {
     app.use(express.errorHandler());
 }
 
-
 http.createServer(app).listen(app.get('port'), function () {
-    console.log('Express server listening on port ' + app.get('port'));
+	console.log('Express server listening on port ' + app.get('port'));
 });

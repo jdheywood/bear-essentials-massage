@@ -14,6 +14,7 @@
         "distPort": 3001,
         "livereloadPort": 1337,
         "src": "app",
-        "srcPort": "3001"
+        "srcPort": "3001",
+        "blogConnectionString": "mongodb://littlebear:justright@ds011482.mlab.com:11482/bearessentialsmassage-blog"
     }
 }

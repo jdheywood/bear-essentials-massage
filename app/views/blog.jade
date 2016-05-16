@@ -1,0 +1,39 @@
+doctype html
+html(lang='en')
+  head
+    include partials/head.jade
+
+    // Custom styles for this template
+    link(href='/css/cover.css', rel='stylesheet')
+    link(href='/css/home.css', rel='stylesheet')
+    
+  body(class='#{imageClass}')
+    .site-wrapper
+      .site-wrapper-inner
+        .cover-container
+          .masthead.clearfix
+            .inner
+              h1.masthead-brand #{heading}
+              include partials/navigation-cover.jade
+          .inner.cover
+
+            .row
+              .col-sm-12
+                .panel.panel-default
+                  .panel-heading.home
+                    h2.cover-heading #{subtitle}
+                    .panel-body
+                      p.lead
+                        | Blog has 
+                        | #{numberOfBlogPosts}
+                        | posts.
+
+            p.lead
+              a.btn.btn-lg.btn-default(href='#{ctaLink}') #{ctaText}
+          include partials/footer-cover.jade
+    
+    include partials/analytics.jade
+    
+    script(src='/js/jquery-1.12.1.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/holder.js')
