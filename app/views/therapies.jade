@@ -1,0 +1,62 @@
+doctype html
+html(lang='en')
+  head
+    include partials/head.jade
+
+    // Custom styles for this template
+    link(href='/css/cover.css', rel='stylesheet')
+    link(href='/css/therapies.css', rel='stylesheet')
+    
+  body(class='#{imageClass}')
+    .site-wrapper
+      .site-wrapper-inner
+        .cover-container
+          .masthead.clearfix.prices
+            .inner
+              h1.masthead-brand #{heading}
+              include partials/navigation-cover.jade
+          .inner.cover.prices
+            h2.cover-heading #{subtitle}
+            p.lead
+              | #{bodyText}
+            .row
+              .col-sm-12.opaque
+                .alert.alert-info.therapies(role='alert')
+                  a.therapies(href='/therapies/sports-massage') Sports Massage
+                  br
+                  span To aid recovery from injury
+            .row
+              .col-sm-12.opaque
+                .alert.alert-info.therapies(role='alert')
+                  a.therapies(href='/therapies/sports-taping') Sports Taping
+                  br
+                  span For support during recovery
+            .row
+              .col-sm-12.opaque
+                .alert.alert-info.therapies(role='alert')
+                  a.therapies(href='/therapies/hot-stones-massage') Hot Stones Massage
+                  br
+                  span Healing and relaxing
+            .row
+              .col-sm-12.opaque
+                .alert.alert-info.therapies(role='alert')
+                  a.therapies(href='/therapies/pregnancy-massage') Pregnancy Massage
+                  br
+                  span Deep relaxation
+            .row
+              .col-sm-12.opaque
+                .alert.alert-info.therapies(role='alert')
+                  a.therapies(href='/therapies/seated-acupressure') Seated Acupressure
+                  br
+                  span Improves the flow of energy
+
+            p.lead
+              a.btn.btn-lg.btn-default(href='#{ctaLink}') #{ctaText}
+          .prices-footer
+            include partials/footer-cover.jade
+    
+    include partials/analytics.jade
+
+    script(src='/js/jquery-1.12.1.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/holder.js')

@@ -23,7 +23,9 @@ html(lang='en')
                   .panel-heading.home
                     .panel-body
                       p.lead
-                        | Based in Brighton and Hove, Bear Essentials Massage offers a number of medical and therapeutic treatments to aid relaxation, tension and stress release.
+                        | Based in Brighton and Hove, Bear Essentials Massage offers a 
+                        | <a href="/therapies"> number of medical and therapeutic treatments</a>
+                        | to aid relaxation, tension and stress release.
                       p
                         | Owned by Patricia Heywood a certified massage therapist, Bear Essentials Massage was established to help people to take time out from their everyday rituals and use that time to consider their wellbeing and state of mind even if it's just for 30 minutes once a fortnight or once a month.
                       p
@@ -39,6 +41,10 @@ html(lang='en')
 
             p.lead
               a.btn.btn-lg.btn-default(href='#{ctaLink}') #{ctaText}
+            p.lead
+              .text-center.pad-top
+                a.btn.btn-lg.btn-default(href='/therapies') All Therapies
+
           include partials/footer-cover.jade
     
     include partials/analytics.jade

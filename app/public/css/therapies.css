@@ -1,0 +1,39 @@
+html, 
+body.therapies {
+  background: url("../../../../img/desktop-stones-in-water.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.alert.alert-info.therapies {
+  color: #fff;
+  background-color: #3E5075;
+  border-color: #fff;
+}
+
+a.therapies {
+  color: #fff;
+  font-size: 28px;
+}
+
+.alert.alert-info span {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+
+@media (min-width: 468px) {
+  
+  .alert.alert-info a.therapies {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  
+  .alert.alert-info strong, .alert.alert-info a.therapies {
+    font-size: 28px;
+  }
+}

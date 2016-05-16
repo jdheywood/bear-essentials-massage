@@ -81,4 +81,19 @@ module.exports = function (app) {
         });
     });
 
+    app.get('/therapies', function (req, res) {
+        res.render('therapies', {
+            title: 'Bear Essentials Massage - Therapies',
+            heading: 'Therapies',
+            subtitle: 'Find out more about the therapies we offer.',
+            bodyText: 'We have a wide range of therapies available, follow the links below to read more about the therapies we offer and find the ideal treatment for you.',
+            ctaText: 'Book now',
+            ctaLink: 'mailto:patricia@bearessentialsmassage.co.uk?subject=Booking enquiry',
+            imageClass: 'therapies',
+            pageName: 'therapies',
+            keywords: 'Therapies, Bear Essentials Massage, Sports Massage, Sports Taping, Pregnancy Massage, Hot Stones Massage, Seated Acupressure, Information, Links, Summary',
+            description: 'We have several different therapies to offer, read more about our therapies by following the links on this page.'
+        });
+    });
+
 };
