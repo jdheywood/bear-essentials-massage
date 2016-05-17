@@ -3,6 +3,8 @@
 
 module.exports = function (app) {
 
+    var Promise = require('promise');
+
     app.get('/sitemap', function (req, res) {
         res.render('sitemap');
     });
@@ -97,29 +99,31 @@ module.exports = function (app) {
     });
 
     app.get('/blog', function (req, res) {
-        //var numPosts = -1;
         var db = req.db;
         var collection = db.get('posts');
-        var numPosts = -1;
-        var setNumPosts = function(count) {
-            return(count);
-        }
-        collection.count({}, function (err, count) {
-            setNumPosts(count);
+        
+        /* jshint -W098 */
+        var promise = new Promise(function (resolve, reject) {
+            collection.count({}, function (err, count) {
+                resolve(count);
+            });
         });
-
-        res.render('blog', {
-            title: 'Bear Essentials Massage - Blog',
-            heading: 'Blog',
-            subtitle: 'Lorem ipsum dolor sit amet',
-            bodyText: 'Lorem ipsum dolor sit amet',
-            ctaText: 'Therapy',
-            ctaLink: '/therapies',
-            imageClass: 'blog',
-            pageName: 'blog',
-            keywords: 'Blog, Bear Essentials Massage, News, Updates, Information, Offers, Brighton, Hove, Treatment, Therapy, Sports Massage, Sports Taping, Hot Stone Massage Pregnancy Massage, Seated Acupressure',
-            description: 'Bear Essentials Massage blog, the place to come for the latest news and offers from Bear Essentials Massage.',
-            numberOfBlogPosts: numPosts
+        /* jshint +W098 */
+        
+        promise.then(function (count) {
+            res.render('blog', {
+                title: 'Bear Essentials Massage - Blog',
+                heading: 'Blog',
+                subtitle: 'Lorem ipsum dolor sit amet',
+                bodyText: 'Lorem ipsum dolor sit amet',
+                ctaText: 'Therapy',
+                ctaLink: '/therapies',
+                imageClass: 'blog',
+                pageName: 'blog',
+                keywords: 'Blog, Bear Essentials Massage, News, Updates, Information, Offers, Brighton, Hove, Treatment, Therapy, Sports Massage, Sports Taping, Hot Stone Massage Pregnancy Massage, Seated Acupressure',
+                description: 'Bear Essentials Massage blog, the place to come for the latest news and offers from Bear Essentials Massage.',
+                numberOfBlogPosts: count
+            });
         });
     });
 
