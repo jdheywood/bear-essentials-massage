@@ -103,6 +103,7 @@ module.exports = function (app) {
         var collection = db.get('posts');
         
         /* jshint -W098 */
+        /* jshint unused:false */
         var promise = new Promise(function (resolve, reject) {
             collection.count({}, function (err, count) {
                 resolve(count);
