@@ -97,9 +97,16 @@ module.exports = function (app) {
     });
 
     app.get('/blog', function (req, res) {
+        //var numPosts = -1;
         var db = req.db;
         var collection = db.get('posts');
-        var numPosts = collection.count();
+        var numPosts = -1;
+        var setNumPosts = function(count) {
+            return(count);
+        }
+        collection.count({}, function (err, count) {
+            setNumPosts(count);
+        });
 
         res.render('blog', {
             title: 'Bear Essentials Massage - Blog',

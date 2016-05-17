@@ -14,7 +14,9 @@ var appConfig = require('./config/appConfig.json');
 
 //var mongo = require('mongodb');
 var monk = require('monk');
+var wrap = require('co-monk');
 var db = monk(appConfig.app.blogConnectionString);
+var posts = wrap(db.get('posts'));
 
 var app = express();
 
@@ -32,6 +34,13 @@ app.use(express.session({
     maxAge: 3600000
 }));
 
+// Make our db accessible to our router
+app.use(function (req, res, next) {
+    req.db = db;
+    req.posts = posts;
+    next();
+});
+
 //routes
 require('./routes/index')(app);
 require('./routes/therapies')(app);
@@ -41,12 +50,6 @@ app.use(express.static(path.join(__dirname, appConfig.directories.publicDir)));
 
 app.use(function (req, res, next) {
     console.log('req.body: ' + JSON.stringify(req.body));
-    next();
-});
-
-// Make our db accessible to our router
-app.use(function (req, res, next) {
-    req.db = db;
     next();
 });
 
