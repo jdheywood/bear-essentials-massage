@@ -3,8 +3,6 @@
 
 module.exports = function (app) {
 
-    var Promise = require('promise');
-
     app.get('/sitemap', function (req, res) {
         res.render('sitemap');
     });
@@ -80,51 +78,6 @@ module.exports = function (app) {
             pageName: 'about',
             keywords: 'About, Bear Essentials Massage, Brighton, Hove, Patricia Heywood, Certified, Therapist, Wellbeing, State of Mind, Professional, Personal, Relaxing, Helpful, Health, Mind, Body, Soul',
             description: 'Owned by Patricia Heywood a certified massage therapist, Bear Essentials Massage was established to help people to take time out from their everyday rituals and use that time to consider their wellbeing and state of mind.'
-        });
-    });
-
-    app.get('/therapies', function (req, res) {
-        res.render('therapies', {
-            title: 'Bear Essentials Massage - Therapies',
-            heading: 'Therapies',
-            subtitle: 'Find out more about the therapies we offer.',
-            bodyText: 'We have a wide range of therapies available, follow the links below to read more about the therapies we offer and find the ideal treatment for you.',
-            ctaText: 'Book now',
-            ctaLink: 'mailto:patricia@bearessentialsmassage.co.uk?subject=Booking enquiry',
-            imageClass: 'therapies',
-            pageName: 'therapies',
-            keywords: 'Therapies, Bear Essentials Massage, Sports Massage, Sports Taping, Pregnancy Massage, Hot Stones Massage, Seated Acupressure, Information, Links, Summary',
-            description: 'We have several different therapies to offer, read more about our therapies by following the links on this page.'
-        });
-    });
-
-    app.get('/blog', function (req, res) {
-        var db = req.db;
-        var collection = db.get('posts');
-        
-        /* jshint -W098 */
-        /* jshint unused:false */
-        var promise = new Promise(function (resolve, reject) {
-            collection.count({}, function (err, count) {
-                resolve(count);
-            });
-        });
-        /* jshint +W098 */
-        
-        promise.then(function (count) {
-            res.render('blog', {
-                title: 'Bear Essentials Massage - Blog',
-                heading: 'Blog',
-                subtitle: 'Lorem ipsum dolor sit amet',
-                bodyText: 'Lorem ipsum dolor sit amet',
-                ctaText: 'Therapy',
-                ctaLink: '/therapies',
-                imageClass: 'blog',
-                pageName: 'blog',
-                keywords: 'Blog, Bear Essentials Massage, News, Updates, Information, Offers, Brighton, Hove, Treatment, Therapy, Sports Massage, Sports Taping, Hot Stone Massage Pregnancy Massage, Seated Acupressure',
-                description: 'Bear Essentials Massage blog, the place to come for the latest news and offers from Bear Essentials Massage.',
-                numberOfBlogPosts: count
-            });
         });
     });
 

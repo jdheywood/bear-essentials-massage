@@ -1,6 +1,3 @@
-/*
- creating a Express app initializing it with the HelloWorld message
- */
 'use strict';
 
 var PORT_LISTENER = 3001;
@@ -44,6 +41,7 @@ app.use(function (req, res, next) {
 //routes
 require('./routes/index')(app);
 require('./routes/therapies')(app);
+require('./routes/blog')(app);
 
 app.use(app.router);
 app.use(express.static(path.join(__dirname, appConfig.directories.publicDir)));
