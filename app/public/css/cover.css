@@ -81,7 +81,7 @@ ul.masthead-nav {
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
@@ -128,7 +128,8 @@ ul.masthead-nav {
   font-weight: bold;
 }
 
-.cover.prices {
+.cover.prices,
+.cover.blog {
   padding: 0 20px;
 }
 

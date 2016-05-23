@@ -15,10 +15,13 @@ html(lang='en')
             .inner
               h1.masthead-brand #{heading}
               include partials/navigation-cover.jade
-          .inner.cover
+          .inner.cover.blog
+            h2.cover-heading #{subtitle}
+              p.lead
+                | #{bodyText}
 
             .row
-              .col-sm-12
+              .col-sm-8
                 .panel.panel-default
                   .panel-heading.home
                     h2.cover-heading #{subtitle}
@@ -26,7 +29,11 @@ html(lang='en')
                       p.lead
                         | Blog has 
                         | #{numberOfBlogPosts}
-                        | posts.
+                        | posts
+              .col-sm-4
+                .panel.panel-default
+                  .panel-heading
+                    h2.panel-title Recent Posts
 
           include partials/footer-cover.jade
     
