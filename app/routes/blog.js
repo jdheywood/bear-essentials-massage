@@ -21,12 +21,12 @@ module.exports = function (app) {
         });
     });
 
-    app.get('/blog/:post_id', function (req, res) {
+    app.get('/blog/:postUrl', function (req, res) {
         var Post = require('../models/post');
-        Post.findOne({'order': 1}, function (error, post) {
+        Post.findOne({'url': req.params.postUrl}, function (error, post) {
             res.render('blog-post', {
                 title: 'Bear Essentials Massage - Blog',
-                url: post.url(),
+                url: post.url,
                 heading: 'Bear Essentials Blog',
                 imageClass: 'blog',
                 subtitle: post.title,

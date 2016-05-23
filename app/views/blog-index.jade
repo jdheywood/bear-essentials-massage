@@ -34,6 +34,10 @@ html(lang='en')
                 .panel.panel-default
                   .panel-heading
                     h2.panel-title Recent Posts
+                    ul
+                    for post in posts
+                      li
+                        a(href='/blog/#{post.url}') #{post.title}
 
           include partials/footer-cover.jade
     
