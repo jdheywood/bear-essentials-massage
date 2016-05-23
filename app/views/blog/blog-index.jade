@@ -1,7 +1,7 @@
 doctype html
 html(lang='en')
   head
-    include partials/head.jade
+    include ../partials/head
 
     // Custom styles for this template
     link(href='/css/cover.css', rel='stylesheet')
@@ -14,7 +14,7 @@ html(lang='en')
           .masthead.clearfix
             .inner
               h1.masthead-brand #{content.heading}
-              include partials/navigation-cover.jade
+              include ../partials/navigation-cover
           .inner.cover.blog
             h2.cover-heading #{content.subtitle}
               p.lead
@@ -28,9 +28,9 @@ html(lang='en')
                     .panel-body
                       h3 #{posts[0].title}
                       p.lead
-                        | #{posts[0].body}
+                        | !{posts[0].intro}
                       p
-                        | #{posts[0].created}
+                        a(href='/blog/#{posts[0].url}') Continue reading...
               .col-sm-4
                 .panel.panel-default
                   .panel-heading
@@ -40,9 +40,9 @@ html(lang='en')
                       li
                         a(href='/blog/#{post.url}') #{post.title}
 
-          include partials/footer-cover.jade
+          include ../partials/footer-cover
     
-    include partials/analytics.jade
+    include ../partials/analytics
     
     script(src='/js/jquery-1.12.1.min.js')
     script(src='/js/bootstrap.min.js')

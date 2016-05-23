@@ -19,7 +19,7 @@ module.exports = function (app) {
             ctaLink: 'mailto:patricia@bearessentialsmassage.co.uk?subject=Booking enquiry'
         };
 
-        res.render('therapies', {
+        res.render('therapies/therapies', {
             meta: meta,
             content: content
         });

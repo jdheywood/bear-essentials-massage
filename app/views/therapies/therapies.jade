@@ -1,7 +1,7 @@
 doctype html
 html(lang='en')
   head
-    include partials/head.jade
+    include ../partials/head
 
     // Custom styles for this template
     link(href='/css/cover.css', rel='stylesheet')
@@ -14,7 +14,7 @@ html(lang='en')
           .masthead.clearfix.prices
             .inner
               h1.masthead-brand #{content.heading}
-              include partials/navigation-cover.jade
+              include ../partials/navigation-cover
           .inner.cover.prices
             h2.cover-heading #{content.subtitle}
             p.lead
@@ -53,9 +53,9 @@ html(lang='en')
             p.lead
               a.btn.btn-lg.btn-default(href='#{content.ctaLink}') #{content.ctaText}
           .prices-footer
-            include partials/footer-cover.jade
+            include ../partials/footer-cover
     
-    include partials/analytics.jade
+    include ../partials/analytics
 
     script(src='/js/jquery-1.12.1.min.js')
     script(src='/js/bootstrap.min.js')

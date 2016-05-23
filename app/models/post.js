@@ -8,7 +8,8 @@ var PostSchema = new Schema({
   order: Number,
   author: String,
   created: Date,
-  body: String
+  body: String,
+  intro: String
 });
 
 // Call this on save to set the post url from the title

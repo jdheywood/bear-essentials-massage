@@ -43,6 +43,7 @@ app.use(function (req, res, next) {
 require('./routes/index')(app);
 require('./routes/therapies')(app);
 require('./routes/blog')(app);
+require('./routes/sitemap')(app);
 
 app.use(app.router);
 app.use(express.static(path.join(__dirname, appConfig.directories.publicDir)));

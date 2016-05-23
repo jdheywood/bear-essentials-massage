@@ -23,9 +23,9 @@ module.exports = function (app) {
         var cachedPosts = myCache.get('all-posts');
         if (cachedPosts === undefined) {
             var Post = require('../models/post');
-            Post.find({}, function (error, posts) {
+            Post.find({}).sort({created: 'descending'}).exec(function (error, posts) {
                 myCache.set('all-posts', posts);
-                res.render('blog-index', {
+                res.render('blog/blog-index', {
                     meta: meta,
                     content: content,
                     numberOfBlogPosts: posts.length,
@@ -33,7 +33,7 @@ module.exports = function (app) {
                 });
             });
         } else {
-            res.render('blog-index', {
+            res.render('blog/blog-index', {
                 meta: meta,
                 content: content,
                 numberOfBlogPosts: cachedPosts.length,
@@ -61,14 +61,14 @@ module.exports = function (app) {
             var Post = require('../models/post');
             Post.findOne({'url': req.params.postUrl}, function (error, post) {
                 myCache.set(req.params.postUrl, post);
-                res.render('blog-post', {
+                res.render('blog/blog-post', {
                     meta: meta,
                     content: content,
                     post: post
                 });
             });
         } else {
-            res.render('blog-post', {
+            res.render('blog/blog-post', {
                 meta: meta,
                 content: content,
                 post: cachedPost

@@ -3,10 +3,6 @@
 
 module.exports = function (app) {
 
-    app.get('/sitemap', function (req, res) {
-        res.render('sitemap');
-    });
-
     var metaHome = {
         title: 'Bear Essentials Massage',
         description: 'Based in Brighton and Hove, Bear Essentials Massage offers a number of medical and therapeutic treatments to aid relaxation, tension and stress release.',
