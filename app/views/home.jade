@@ -7,13 +7,13 @@ html(lang='en')
     link(href='/css/cover.css', rel='stylesheet')
     link(href='/css/home.css', rel='stylesheet')
     
-  body(class='#{imageClass}')
+  body(class='#{content.imageClass}')
     .site-wrapper
       .site-wrapper-inner
         .cover-container
           .masthead.clearfix
             .inner
-              h1.masthead-brand #{heading}
+              h1.masthead-brand #{content.heading}
               include partials/navigation-cover.jade
           .inner.cover
 
@@ -21,7 +21,7 @@ html(lang='en')
               .col-sm-12
                 .panel.panel-default
                   .panel-heading.home
-                    h2.cover-heading #{subtitle}
+                    h2.cover-heading #{content.subtitle}
                     .panel-body
                       p.lead
                         | Based in Brighton and Hove, Bear Essentials Massage offers a 
@@ -29,7 +29,10 @@ html(lang='en')
                         | to aid relaxation, tension and stress release.
 
             p.lead
-              a.btn.btn-lg.btn-default(href='#{ctaLink}') #{ctaText}
+              a.btn.btn-lg.btn-default(href='#{content.ctaLink}') #{content.ctaText}
+            p.lead
+              .text-center.pad-top
+                a.btn.btn-lg.btn-default(href='/therapies') All Therapies
           include partials/footer-cover.jade
     
     include partials/analytics.jade

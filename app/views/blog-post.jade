@@ -7,13 +7,13 @@ html(lang='en')
     link(href='/css/cover.css', rel='stylesheet')
     link(href='/css/blog.css', rel='stylesheet')
     
-  body(class='#{imageClass}')
+  body(class='#{content.imageClass}')
     .site-wrapper
       .site-wrapper-inner
         .cover-container
           .masthead.clearfix
             .inner
-              h1.masthead-brand #{heading}
+              h1.masthead-brand #{content.heading}
               include partials/navigation-cover.jade
           .inner.cover
 
@@ -21,12 +21,12 @@ html(lang='en')
               .col-sm-12
                 .panel.panel-default
                   .panel-heading.home
-                    h2.cover-heading #{subtitle}
+                    h2.cover-heading #{post.title}
                     .panel-body
                       p.lead
-                        | #{bodyText}
+                        | !{post.body}
                       p
-                        | #{url}
+                        | #{post.created}
 
             p.lead
               a.btn.btn-lg.btn-default(href='/blog') All Posts

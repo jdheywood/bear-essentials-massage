@@ -7,13 +7,13 @@ html(lang='en')
     link(href='/css/cover.css', rel='stylesheet')
     link(href='/css/about.css', rel='stylesheet')
     
-  body(class='#{imageClass}')
+  body(class='#{content.imageClass}')
     .site-wrapper
       .site-wrapper-inner
         .cover-container
           .masthead.clearfix.about
             .inner
-              h1.masthead-brand #{heading}
+              h1.masthead-brand #{content.heading}
               include partials/navigation-cover.jade
           .inner.cover.about
 
@@ -40,7 +40,7 @@ html(lang='en')
                         | Bear Essentials Massage is here to help you to utilise your time out and help you to recover, relax and rejuvenate.
 
             p.lead
-              a.btn.btn-lg.btn-default(href='#{ctaLink}') #{ctaText}
+              a.btn.btn-lg.btn-default(href='#{content.ctaLink}') #{content.ctaText}
             p.lead
               .text-center.pad-top
                 a.btn.btn-lg.btn-default(href='/therapies') All Therapies

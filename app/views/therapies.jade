@@ -7,18 +7,18 @@ html(lang='en')
     link(href='/css/cover.css', rel='stylesheet')
     link(href='/css/therapies.css', rel='stylesheet')
     
-  body(class='#{imageClass}')
+  body(class='#{content.imageClass}')
     .site-wrapper
       .site-wrapper-inner
         .cover-container
           .masthead.clearfix.prices
             .inner
-              h1.masthead-brand #{heading}
+              h1.masthead-brand #{content.heading}
               include partials/navigation-cover.jade
           .inner.cover.prices
-            h2.cover-heading #{subtitle}
+            h2.cover-heading #{content.subtitle}
             p.lead
-              | #{bodyText}
+              | #{content.bodyText}
             .row
               .col-sm-12.opaque
                 .alert.alert-info.therapies(role='alert')
@@ -51,7 +51,7 @@ html(lang='en')
                   span Improves the flow of energy
 
             p.lead
-              a.btn.btn-lg.btn-default(href='#{ctaLink}') #{ctaText}
+              a.btn.btn-lg.btn-default(href='#{content.ctaLink}') #{content.ctaText}
           .prices-footer
             include partials/footer-cover.jade
     

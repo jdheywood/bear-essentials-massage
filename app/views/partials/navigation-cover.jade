@@ -14,18 +14,18 @@ ul.nav.masthead-nav
         a(href='/therapies/pregnancy-massage') Pregnancy Massage 
       li
         a(href='/therapies/seated-acupressure') Seated Acupressure
-  unless pageName == 'prices'
+  unless content.pageName == 'prices'
     li
       a(href='/price-list') Price List
-  unless pageName == 'about'
+  unless content.pageName == 'about'
     li
       a(href='/about') About Us
-  unless pageName == 'contact'
+  unless content.pageName == 'contact'
     li
       a(href='/contact') Contact Us
-  unless pageName == 'blog'
+  unless content.pageName == 'blog'
     li
       a(href='/blog') Blog
-  unless pageName == 'home'
+  unless content.pageName == 'home'
     li
       a(href='/') Home

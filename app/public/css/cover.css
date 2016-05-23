@@ -214,14 +214,14 @@ strong.fa.fa-facebook-square {
   }*/
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
   }
   .masthead.prices {
     position: static;
   }
   .mastfoot {
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
   }
   .prices-footer>.mastfoot {
