@@ -11,9 +11,11 @@ var appConfig = require('./config/appConfig.json');
 
 //var mongo = require('mongodb');
 var monk = require('monk');
-var wrap = require('co-monk');
 var db = monk(appConfig.app.blogConnectionString);
-var posts = wrap(db.get('posts'));
+
+var mongoose = require('mongoose');
+mongoose.connect(appConfig.app.blogConnectionString);
+
 
 var app = express();
 
@@ -34,7 +36,6 @@ app.use(express.session({
 // Make our db accessible to our router
 app.use(function (req, res, next) {
     req.db = db;
-    req.posts = posts;
     next();
 });
 

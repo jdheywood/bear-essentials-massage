@@ -24,12 +24,10 @@ html(lang='en')
                     h2.cover-heading #{subtitle}
                     .panel-body
                       p.lead
-                        | Blog has 
-                        | #{numberOfBlogPosts}
-                        | posts.
+                        | #{bodyText}
 
             p.lead
-              a.btn.btn-lg.btn-default(href='#{ctaLink}') #{ctaText}
+              a.btn.btn-lg.btn-default(href='/blog') All Posts
           include partials/footer-cover.jade
     
     include partials/analytics.jade

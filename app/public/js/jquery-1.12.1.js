@@ -5477,7 +5477,7 @@ jQuery.event = {
 				//
 				// Guard for simulated events was moved to jQuery.event.stopPropagation function
 				// since `originalEvent` should point to the original event for the
-				// constancy with other events and for more focused logic
+				// constancy with other events and for more focused models
 			}
 		);
 
