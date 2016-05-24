@@ -44,7 +44,7 @@ html(lang='en')
                     ul
                       for tag in tags
                         li
-                          a(href='/blog/tag/#{tag}') #{tag}
+                          a(href='/blog/tag/#{tag}') #{tag.toProperCase()}
 
             p.lead
               a.btn.btn-lg.btn-default(href='/blog') All Posts

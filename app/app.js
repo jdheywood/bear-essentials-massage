@@ -9,13 +9,11 @@ var express = require('express'),
 
 var appConfig = require('./config/appConfig.json');
 
-//var mongo = require('mongodb');
-var monk = require('monk');
-var db = monk(appConfig.app.blogConnectionString);
-
 var mongoose = require('mongoose');
 mongoose.connect(appConfig.app.blogConnectionString);
 
+var stringUtils = require('./utils/string');
+stringUtils.initialise();
 
 var app = express();
 
@@ -32,12 +30,6 @@ app.use(express.session({
     secret: 'my l1ttl3 s3cret s3ss10n k3y isnt it?',
     maxAge: 3600000
 }));
-
-// Make our db accessible to our router
-app.use(function (req, res, next) {
-    req.db = db;
-    next();
-});
 
 //routes
 require('./routes/index')(app);

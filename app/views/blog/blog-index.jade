@@ -46,7 +46,7 @@ html(lang='en')
                     ul
                       for tag in tags
                         li
-                          a(href='/blog/tag/#{tag}') #{tag}
+                          a(href='/blog/tag/#{tag}') #{tag.toProperCase()}
 
           include ../partials/footer-cover
     

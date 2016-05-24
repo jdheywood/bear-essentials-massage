@@ -51,18 +51,15 @@ function getPost(req) {
 }
 
 function getPostsByTag(tag) {
-    console.log(tag);
     var deferred = Q.defer();
     var cachedPosts = myCache.get(tag);
     if (cachedPosts === undefined) {
         var Post = require('../models/post');
         Post.find({tags: {$in: [tag]}}).sort({created: 'descending'}).exec(function (error, posts) {
-            console.log(posts);
             myCache.set(tag, posts);
             deferred.resolve(posts);
         });
     } else {
-        console.log(cachedPosts);
         deferred.resolve(cachedPosts);
     }
     return deferred.promise;
