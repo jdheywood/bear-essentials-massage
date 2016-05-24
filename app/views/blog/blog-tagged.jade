@@ -15,22 +15,20 @@ html(lang='en')
             .inner
               h1.masthead-brand #{content.heading}
               include ../partials/navigation-cover
-          .inner.cover.blog
+          .inner.cover.blog.tagged
             h2.cover-heading #{content.subtitle}
-              p.lead
-                | #{content.bodyText}
 
             .row
               .col-sm-8
-                .panel.panel-default
-                  .panel-heading.home
-                    h2.cover-heading Latest Post
-                    .panel-body
-                      h3 #{posts[0].title}
-                      p.lead
-                        | !{posts[0].intro}
-                      p
-                        a(href='/blog/#{posts[0].url}') Continue reading...
+                for post in posts
+                  .panel.panel-default
+                    .panel-heading.home
+                      h2.cover-heading #{post.title}
+                      .panel-body
+                        p.lead
+                          | !{post.body}
+                        p
+                          | #{post.created}
               .col-sm-4
                 .panel.panel-default
                   .panel-heading
@@ -47,6 +45,9 @@ html(lang='en')
                       for tag in tags
                         li
                           a(href='/blog/tag/#{tag}') #{tag}
+
+            p.lead
+              a.btn.btn-lg.btn-default(href='/blog') All Posts
 
           include ../partials/footer-cover
     

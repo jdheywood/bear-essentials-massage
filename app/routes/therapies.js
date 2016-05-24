@@ -40,7 +40,7 @@ module.exports = function (app) {
             heading: 'Sports Massage',
             subtitle: 'To aid recovery from injury',
             pageName: 'sportsMassage'
-        }        
+        }
     };
 
     var sportsTaping = {
@@ -173,7 +173,7 @@ module.exports = function (app) {
         else {
             res.render('therapies/' + req.params.selectedTherapy, {
                 carouselItems: spa.items,
-                meta: spo.meta,
+                meta: spa.meta,
                 content: spa.content
             });
         }

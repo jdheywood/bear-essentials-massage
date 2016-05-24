@@ -30,7 +30,8 @@
     "matchdep": "~0.1.2",
     "mongodb": "^2.1.18",
     "mongoose": "^4.4.19",
-    "node-cache": "^3.2.1"
+    "node-cache": "^3.2.1",
+    "q": "^1.4.1"
   },
   "_commentdependencies": {
     "jade": "~1.0.2",

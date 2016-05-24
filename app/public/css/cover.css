@@ -198,6 +198,9 @@ strong.fa.fa-facebook-square {
   .alert.alert-info a {
     font-size: 20px;
   }
+  .cover.blog.tagged h2 {
+    margin-bottom: 30px;
+  }
 }
 
 /*
@@ -208,6 +211,9 @@ strong.fa.fa-facebook-square {
   .cover {
     padding: 0 20px;
     margin-top: 130px;
+  }
+  .cover.blog.tagged {
+    margin-top: 60px;
   }
   /*.cover.prices {
     padding: 100px 20px 0 20px;
