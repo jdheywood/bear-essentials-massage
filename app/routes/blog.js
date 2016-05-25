@@ -5,6 +5,7 @@ var NodeCache = require('node-cache');
 var myCache = new NodeCache();
 var Post = require('../models/post');
 var Q = require('q');
+var moment = require('moment');
 
 function getTags() {
     var deferred = Q.defer();
@@ -117,7 +118,8 @@ module.exports = function (app) {
                 meta: meta,
                 content: content,
                 post: promised[0],
-                tags: promised[1]
+                tags: promised[1],
+                moment: moment
             });
         });
     });
@@ -139,14 +141,17 @@ module.exports = function (app) {
         var promises = [];
         promises.push(getPostsByTag(tagValue));
         promises.push(getTags());
+        promises.push(getPosts());
 
         Q.all(promises).then(function (promised) {
             res.render('blog/blog-tagged', {
                 meta: meta,
                 content: content,
                 numberOfBlogPosts: promised[0].length,
-                posts: promised[0],
-                tags: promised[1]
+                taggedPosts: promised[0],
+                tags: promised[1],
+                allPosts: promises[2],
+                moment: moment
             });
         });
     });

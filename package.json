@@ -28,6 +28,7 @@
     "googleapis": "~0.4.3",
     "jade": "~0.34.1",
     "matchdep": "~0.1.2",
+    "moment": "^2.13.0",
     "mongodb": "^2.1.18",
     "mongoose": "^4.4.19",
     "node-cache": "^3.2.1",

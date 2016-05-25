@@ -169,6 +169,31 @@ ul.masthead-nav {
     text-shadow: none;
 }
 
+.panel-body.blog-tags {
+  padding: 15px 0px;
+}
+
+.panel-body>.table {
+  display: table;
+  margin: 0 auto;
+  width: auto;
+}
+
+.panel-body>.table>ul.blog-tags {
+  overflow: auto;
+  padding-left: 0px;
+}
+.panel-body>.table>ul.blog-tags li {
+  float: left;
+  margin: 0 10px;
+  list-style-type: none;
+}
+.panel-body>.table>ul.blog-tags li {
+  text-align: left;
+  display: inline;
+}
+
+
 .table>thead>tr>th {
     text-align: center;
 }
@@ -198,7 +223,7 @@ strong.fa.fa-facebook-square {
   .alert.alert-info a {
     font-size: 20px;
   }
-  .cover.blog.tagged h2 {
+  h2.cover-heading.blog.tagged {
     margin-bottom: 30px;
   }
 }

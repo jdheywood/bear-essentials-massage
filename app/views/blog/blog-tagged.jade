@@ -16,35 +16,38 @@ html(lang='en')
               h1.masthead-brand #{content.heading}
               include ../partials/navigation-cover
           .inner.cover.blog.tagged
-            h2.cover-heading #{content.subtitle}
+            h2.cover-heading.blog.tagged #{content.subtitle}
 
             .row
               .col-sm-8
-                for post in posts
+                for taggedPost in taggedPosts
                   .panel.panel-default
                     .panel-heading.home
-                      h2.cover-heading #{post.title}
+                      h2.cover-heading #{taggedPost.title}
                       .panel-body
                         p.lead
-                          | !{post.body}
+                          | !{taggedPost.body}
                         p
-                          | #{post.created}
+                          | Posted on #{moment(taggedPost.created).format("dddd MMMM Do YYYY")} by #{taggedPost.author}
               .col-sm-4
                 .panel.panel-default
                   .panel-heading
-                    h2.panel-title Recent Posts (#{numberOfBlogPosts})
-                    ul
-                    for post in posts
-                      li
-                        a(href='/blog/#{post.url}') #{post.title}
+                    h2.panel-title Recent Posts
+                    .panel-body
+                      ul.blog-recent
+                      for post in allPosts
+                        li
+                          a(href='/blog/#{post.url}') #{post.title}
 
                 .panel.panel-default
                   .panel-heading
-                    h2.panel-title Tags (N)
-                    ul
-                      for tag in tags
-                        li
-                          a(href='/blog/tag/#{tag}') #{tag.toProperCase()}
+                    h2.panel-title Tags
+                    .panel-body.blog-tags
+                      .table
+                        ul.blog-tags
+                          for tag in tags
+                            li
+                              a(href='/blog/tag/#{tag}') #{tag.toProperCase()}
 
             p.lead
               a.btn.btn-lg.btn-default(href='/blog') All Posts
