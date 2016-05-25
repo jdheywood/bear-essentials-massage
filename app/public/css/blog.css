@@ -13,3 +13,7 @@ body.blog {
 	height: 100%;
   }
 }
+
+p.posted-on {
+  margin-top: 40px;
+}

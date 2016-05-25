@@ -27,7 +27,7 @@ html(lang='en')
                       .panel-body
                         p.lead
                           | !{taggedPost.body}
-                        p
+                        p.posted-on
                           | Posted on #{moment(taggedPost.created).format("dddd MMMM Do YYYY")} by #{taggedPost.author}
               .col-sm-4
                 .panel.panel-default

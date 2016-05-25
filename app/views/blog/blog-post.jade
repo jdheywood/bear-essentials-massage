@@ -25,7 +25,7 @@ html(lang='en')
                     .panel-body
                       p.lead
                         | !{post.body}
-                      p
+                      p.posted-on
                         | Posted on #{moment(post.created).format("dddd MMMM Do YYYY")} by #{post.author}
 
             p.lead
