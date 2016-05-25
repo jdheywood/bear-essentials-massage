@@ -128,11 +128,6 @@ ul.masthead-nav {
   font-weight: bold;
 }
 
-.cover.prices,
-.cover.blog {
-  padding: 0 20px;
-}
-
 
 /*
  * Footer
@@ -169,31 +164,6 @@ ul.masthead-nav {
     text-shadow: none;
 }
 
-.panel-body.blog-tags {
-  padding: 15px 0px;
-}
-
-.panel-body>.table {
-  display: table;
-  margin: 0 auto;
-  width: auto;
-}
-
-.panel-body>.table>ul.blog-tags {
-  overflow: auto;
-  padding-left: 0px;
-}
-.panel-body>.table>ul.blog-tags li {
-  float: left;
-  margin: 0 10px;
-  list-style-type: none;
-}
-.panel-body>.table>ul.blog-tags li {
-  text-align: left;
-  display: inline;
-}
-
-
 .table>thead>tr>th {
     text-align: center;
 }
@@ -223,9 +193,6 @@ strong.fa.fa-facebook-square {
   .alert.alert-info a {
     font-size: 20px;
   }
-  h2.cover-heading.blog.tagged {
-    margin-bottom: 30px;
-  }
 }
 
 /*
@@ -237,26 +204,14 @@ strong.fa.fa-facebook-square {
     padding: 0 20px;
     margin-top: 130px;
   }
-  .cover.blog.tagged {
-    margin-top: 60px;
-  }
-  /*.cover.prices {
-    padding: 100px 20px 0 20px;
-  }*/
   /* Pull out the header and footer */
   .masthead {
     /*position: fixed;*/
     top: 0;
   }
-  .masthead.prices {
-    position: static;
-  }
   .mastfoot {
     /*position: fixed;*/
     bottom: 0;
-  }
-  .prices-footer>.mastfoot {
-    position: static; 
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -278,15 +233,9 @@ strong.fa.fa-facebook-square {
   .cover {
     padding: 0 20px;
   }
-  /*.cover.prices {
-    padding: 100px 20px 0 20px;
-  }*/
   .masthead,
   .mastfoot,
   .cover-container {
     width: 900px;
-  }
-  .prices-footer>.mastfoot {
-    position: static; 
   }
 }

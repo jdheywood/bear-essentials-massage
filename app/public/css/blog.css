@@ -14,6 +14,46 @@ body.blog {
   }
 }
 
+.cover.blog {
+  padding: 0 20px;
+}
+
+.panel-body.blog-tags {
+  padding: 15px 0px;
+}
+
+.panel-body>.table {
+  display: table;
+  margin: 0 auto;
+  width: auto;
+}
+
+.panel-body>.table>ul.blog-tags {
+  overflow: auto;
+  padding-left: 0px;
+}
+.panel-body>.table>ul.blog-tags li {
+  float: left;
+  margin: 0 10px;
+  list-style-type: none;
+}
+.panel-body>.table>ul.blog-tags li {
+  text-align: left;
+  display: inline;
+}
+
 p.posted-on {
   margin-top: 40px;
+}
+
+@media (min-width: 468px) {
+  h2.cover-heading.blog.tagged {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cover.blog.tagged {
+    margin-top: 60px;
+  }
 }

@@ -6,3 +6,22 @@ body.prices {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.cover.prices {
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .masthead.prices {
+    position: static;
+  }
+  .prices-footer>.mastfoot {
+    position: static;
+  }
+}
+
+@media (min-width: 992px) {
+  .prices-footer>.mastfoot {
+    position: static;
+  }
+}
