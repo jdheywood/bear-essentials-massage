@@ -39,10 +39,15 @@ html(lang='en')
                   a.contact(href='tel:07754 312 622') 07754 312 622
 
             p.lead
-              a.btn.btn-lg.btn-default(href='#{content.ctaLink}') #{content.ctaText}
+              a.btn.btn-lg.btn-default(href='https://www.treatwell.co.uk/', id="wahanda-online-booking-widget", onclick='wahanda.openOnlineBookingWidget("https://widget.treatwell.co.uk/place/318199/menu/"); return false;', target="_blank")
+                span
+                  | Book now
+
             p.lead
-              .text-center.pad-top
-                a.btn.btn-lg.btn-default(href='/therapies') All Therapies
+              a.btn.btn-lg.btn-default(href='#{content.ctaLink}') #{content.ctaText}
+                p.lead
+                  .text-center.pad-top
+                    a.btn.btn-lg.btn-default(href='/therapies') All Therapies
 
           .prices-footer
             include partials/footer-cover.jade
@@ -52,3 +57,14 @@ html(lang='en')
     script(src='/js/jquery-1.12.1.min.js')
     script(src='/js/bootstrap.min.js')
     script(src='/js/holder.js')
+    script(src='https://widget.treatwell.co.uk/common/venue-menu/javascript/widget-button.js')
+
+    script.
+      (function () {
+        var link = document.createElement("link");
+        link.type = "text/css";
+        link.href = "https://widget.treatwell.co.uk/common/venue-menu/css/widget-button.css";
+        link.rel = "stylesheet";
+        link.media = "screen";
+        document.getElementsByTagName("head")[0].appendChild(link);
+      }() );

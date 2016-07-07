@@ -41,7 +41,7 @@ html(lang='en')
                           tr
                             td 30 minutes
                             td &pound;25.00 (back massage)
-                      a.btn.btn-sm.btn-primary(href='mailto:patricia@bearessentialsmassage.co.uk?subject=Sports Massage Booking Enquiry', role='button') Book a Sports Massage
+                      a.btn.btn-sm.btn-primary(href='mailto:patricia@bearessentialsmassage.co.uk?subject=Sports Massage Booking Enquiry', role='button') Sports Massage Enquiry
 
             .row
               .col-sm-12
@@ -59,7 +59,7 @@ html(lang='en')
                           tr
                             td 45 minutes
                             td &pound;27.00 (follow up including treatment)
-                      a.btn.btn-sm.btn-primary(href='mailto:patricia@bearessentialsmassage.co.uk?subject=Sports Taping Booking Enquiry', role='button') Book Sports Taping
+                      a.btn.btn-sm.btn-primary(href='mailto:patricia@bearessentialsmassage.co.uk?subject=Sports Taping Booking Enquiry', role='button') Sports Taping Enquiry
 
             .row
               .col-sm-6
@@ -72,7 +72,7 @@ html(lang='en')
                           tr
                             td 60 minutes
                             td &pound;40.00
-                      a.btn.btn-sm.btn-primary(href='mailto:patricia@bearessentialsmassage.co.uk?subject=Hot Stones Massage Booking Enquiry', role='button') Book a Hot Stones Massage
+                      a.btn.btn-sm.btn-primary(href='mailto:patricia@bearessentialsmassage.co.uk?subject=Hot Stones Massage Booking Enquiry', role='button') Hot Stones Massage Enquiry
 
               .col-sm-6
                 .panel.panel-default
@@ -84,7 +84,7 @@ html(lang='en')
                           tr
                             td 60 minutes
                             td &pound;37.00
-                      a.btn.btn-sm.btn-primary(href='mailto:patricia@bearessentialsmassage.co.uk?subject=Pregnancy Massage Booking Enquiry', role='button') Book a Pregnancy Massage
+                      a.btn.btn-sm.btn-primary(href='mailto:patricia@bearessentialsmassage.co.uk?subject=Pregnancy Massage Booking Enquiry', role='button') Pregnancy Massage Enquiry
             .row
               .col-sm-12
                 .panel.panel-default
@@ -102,10 +102,16 @@ html(lang='en')
                           tr
                             td 15 mins (non-corporate)
                             td &pound;11.00 (a minimum of 5 clients per visit and turnaround)
-                      a.btn.btn-sm.btn-primary(href='mailto:patricia@bearessentialsmassage.co.uk?subject=Seated Acupressure Booking Enquiry', role='button') Book Seated Acupressure
+                      a.btn.btn-sm.btn-primary(href='mailto:patricia@bearessentialsmassage.co.uk?subject=Seated Acupressure Booking Enquiry', role='button') Seated Acupressure Enquiry
+
+            p.lead
+              a.btn.btn-lg.btn-default(href='https://www.treatwell.co.uk/', id="wahanda-online-booking-widget", onclick='wahanda.openOnlineBookingWidget("https://widget.treatwell.co.uk/place/318199/menu/"); return false;', target="_blank")
+                span
+                  | Book now
 
             p.lead
               a.btn.btn-lg.btn-default(href='#{content.ctaLink}') #{content.ctaText}
+
           .prices-footer
             include partials/footer-cover.jade
     
@@ -114,3 +120,15 @@ html(lang='en')
     script(src='/js/jquery-1.12.1.min.js')
     script(src='/js/bootstrap.min.js')
     script(src='/js/holder.js')
+    script(src='https://widget.treatwell.co.uk/common/venue-menu/javascript/widget-button.js')
+
+    script.
+      (function () {
+        var link = document.createElement("link");
+        link.type = "text/css";
+        link.href = "https://widget.treatwell.co.uk/common/venue-menu/css/widget-button.css";
+        link.rel = "stylesheet";
+        link.media = "screen";
+        document.getElementsByTagName("head")[0].appendChild(link);
+      }() );
+

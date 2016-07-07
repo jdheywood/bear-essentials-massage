@@ -239,3 +239,11 @@ strong.fa.fa-facebook-square {
     width: 900px;
   }
 }
+
+#wahanda-online-booking-widget {
+  border-color: #FF5C39!important;
+  background-color: #FF5C39!important;
+  border-radius: 5px!important;
+  text-transform: none!important;
+  height: 48px!important;
+}

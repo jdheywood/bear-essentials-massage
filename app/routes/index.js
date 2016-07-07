@@ -43,7 +43,7 @@ module.exports = function (app) {
             bodyText: 'We have a wide range of therapies and sessions available, for enquiries, bookings and tailored sessions please contact us.',
             imageClass: 'prices',
             pageName: 'prices',
-            ctaText: 'Book Now',
+            ctaText: 'Booking Enquiry',
             ctaLink: 'mailto:patricia@bearessentialsmassage.co.uk?subject=Booking enquiry'
         };
         
@@ -65,7 +65,7 @@ module.exports = function (app) {
             bodyText: 'Drop us a line and we will help you with any queries you may have. We will help to identify the the best and most suitable treatment for you and book your appointment.',
             imageClass: 'contact',
             pageName: 'contact',
-            ctaText: 'Book now',
+            ctaText: 'Booking Enquiry',
             ctaLink: 'mailto:patricia@bearessentialsmassage.co.uk?subject=Booking enquiry',
         };
         
