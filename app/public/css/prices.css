@@ -7,10 +7,6 @@ body.prices {
   background-size: cover;
 }
 
-.cover.prices {
-  padding: 0 20px;
-}
-
 .table.prices-2-col>tbody>tr>td {
   width: 50%;
 }

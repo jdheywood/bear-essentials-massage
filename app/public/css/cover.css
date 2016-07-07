@@ -128,6 +128,9 @@ ul.masthead-nav {
   font-weight: bold;
 }
 
+.cover.prices {
+  padding: 0 20px;
+}
 
 /*
  * Footer
