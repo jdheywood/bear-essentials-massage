@@ -79,24 +79,6 @@ module.exports = function (app) {
         }
     };
 
-    var pregnancyMassage = {
-        items: [
-            { 'id': 0, 'src': '/img/desktop-pregnancy-4.jpg', 'alt': 'pregnancy 4', 'heading': 'Pregnancy Massage', 'text': 'Provides deep relaxation along with emotional and physiological wellbeing for both mother and baby', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
-            { 'id': 1, 'src': '/img/desktop-pregnancy-1.jpg', 'alt': 'pregnancy 1', 'heading': 'Pregnancy Massage', 'text': 'Reduces back pain and general aches from pregnancy', 'linkUrl': '../../../contact', 'linkText': 'Contact us' },
-            { 'id': 2, 'src': '/img/desktop-pregnancy-5.jpg', 'alt': 'pregnancy 5', 'heading': 'Pregnancy Massage', 'text': 'Reduce stress, blood pressure and fluid retention', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
-        ],
-        meta: {
-            title: 'Bear Essentials Massage - Pregnancy Massage',
-            description: 'Pregnancy massage can offer deep relaxation along with emotional and physiological wellbeing for both the mother and her baby.',
-            keywords: 'Pregnancy Massage, Therapy, Treatment, Deep, Relaxation, Emotional, Physiological, Wellbeing, Baby, Mother'
-        },
-        content: {
-            heading: 'Pregnancy Massage',
-            subtitle: 'Deep relaxation',
-            pageName: 'pregnancyMassage'
-        }
-    };
-
     var seatedAcupressure = {
         items: [
             { 'id': 0, 'src': '/img/desktop-seated-1.jpg', 'alt': 'seated 1', 'heading': 'Seated Acupressure', 'text': 'Stimulates the acupressure points in the head, neck, shoulders, spine and lower back', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
@@ -154,13 +136,6 @@ module.exports = function (app) {
                 carouselItems: hotStonesMassage.items,
                 meta: hotStonesMassage.meta,
                 content: hotStonesMassage.content
-            });
-        }
-        else if (req.params.selectedTherapy === 'pregnancy-massage') {
-            res.render('therapies/' + req.params.selectedTherapy, {
-                carouselItems: pregnancyMassage.items,
-                meta: pregnancyMassage.meta,
-                content: pregnancyMassage.content
             });
         }
         else if (req.params.selectedTherapy === 'seated-acupressure') {
