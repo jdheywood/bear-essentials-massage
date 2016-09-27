@@ -144,13 +144,8 @@ module.exports = function (app) {
                 meta: seatedAcupressure.meta,
                 content: seatedAcupressure.content
             });
-        }
-        else {
-            res.render('therapies/' + req.params.selectedTherapy, {
-                carouselItems: spa.items,
-                meta: spa.meta,
-                content: spa.content
-            });
+        } else {
+            throw new Error('Therapy not found');
         }
     });
 };
