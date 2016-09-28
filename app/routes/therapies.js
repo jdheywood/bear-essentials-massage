@@ -97,24 +97,6 @@ module.exports = function (app) {
         }
     };
 
-    var spa = {
-        items: [
-            { 'id': 0, 'src': '/img/spa-1.jpg', 'alt': 'spa 1', 'heading': 'Lorem ipsum', 'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
-            { 'id': 1, 'src': '/img/spa-2.jpg', 'alt': 'spa 2', 'heading': 'Lorem ipsum', 'text': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'linkUrl': '../../../contact', 'linkText': 'Contact us' },
-            { 'id': 2, 'src': '/img/spa-4.jpg', 'alt': 'spa 4', 'heading': 'Lorem ipsum', 'text': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
-        ],
-        meta: {
-            title: 'Bear Essentials Massage - Spa',
-            description: 'Here to help you recover, relax and rejuvenate.',
-            keywords: 'Bear Essentials Massage, Spa'
-        },
-        content: {
-            heading: 'Spa',
-            subtitle: 'Here to help you recover, relax and rejuvenate.',
-            pageName: 'spa'
-        }
-    };
-
     app.get('/therapies/:selectedTherapy', function (req, res) {
         
         if (req.params.selectedTherapy === 'sports-massage') {
@@ -147,5 +129,31 @@ module.exports = function (app) {
         } else {
             throw new Error('Therapy not found');
         }
+    });
+
+    var treatmentRoom = {
+        items: [
+            { 'id': 0, 'src': '/img/room-1.jpg', 'alt': 'relaxation room 1', 'heading': 'Relaxing', 'text': 'A tranquil space designed to ensure you receive the full benefit of your chosen treatment.', 'linkUrl': '../../../price-list', 'linkText': 'Price list' },
+            { 'id': 1, 'src': '/img/room-2.jpg', 'alt': 'relaxation room 2', 'heading': 'Calming', 'text': 'A tranquil space designed to ensure you receive the full benefit of your chosen treatment.', 'linkUrl': '../../../contact', 'linkText': 'Contact us' },
+            { 'id': 2, 'src': '/img/room-3.jpg', 'alt': 'relaxation room 3', 'heading': 'Soothing', 'text': 'A tranquil space designed to ensure you receive the full benefit of your chosen treatment.', 'linkUrl': 'mailto:patricia@bearessentialsmassage.co.uk', 'linkText': 'Book now' }
+        ],
+        meta: {
+            title: 'Bear Essentials Massage - Treatment Room',
+            description: 'Lorem ipsum dolor sit amet',
+            keywords: 'Bear Essentials Massage, Treatment Room, Relaxing, Rejuvenating, Calming, Soothing, Comfortable, Professional'
+        },
+        content: {
+            heading: 'Relaxation Room',
+            subtitle: 'A relaxing sanctuary for you',
+            pageName: 'relaxationRoom'
+        }
+    };
+
+    app.get('/relaxation-room', function (req, res) {
+        res.render('relaxation-room', {
+            carouselItems: treatmentRoom.items,
+            meta: treatmentRoom.meta,
+            content: treatmentRoom.content
+        });
     });
 };

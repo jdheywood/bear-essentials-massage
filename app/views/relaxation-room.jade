@@ -1,0 +1,51 @@
+doctype html
+html(lang='en')
+  head
+    include ./partials/head.jade
+
+    // Custom styles for this template
+    link(href='/css/carousel.css', rel='stylesheet')
+  body
+    include ./partials/navigation-carousel.jade
+
+    include ./partials/carousel.jade
+    
+    // Marketing messaging and featurettes
+    // ==================================================
+    // Wrap the rest of the page in another container to center all the content.
+    .container.marketing
+      
+      // START THE FEATURETTES
+      .row.featurette
+        .col-md-12
+          h2.featurette-heading
+            | #{content.heading}.
+            span.text-muted #{content.subtitle}
+          p.lead
+            | Our relaxation room is a tranquil space designed to ensure you receive the full benefit of your chosen treatment.
+          p.lead
+            | The room is a calming sanctuary with soothing sounds, subtly lit with candles and fragranced with relaxing aromatherapy oils and guaranteed to enhance your experience and treatment.
+
+          p.lead
+            .text-center.pad-top
+              a.btn.btn-lg.btn-default(href='../../../price-list') Price list
+          p.lead
+            .text-center.pad-top
+              a.btn.btn-lg.btn-default(href='/therapies') All Therapies
+              
+      hr.featurette-divider
+      // /END THE FEATURETTES
+      // FOOTER
+      include ./partials/footer-carousel.jade
+    // /.container
+    
+    // Bootstrap core JavaScript
+    // ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/holder.js')
+    script(src='/js/ofi.browser.js')
+
+    script.
+      objectFitImages();
